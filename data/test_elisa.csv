@@ -1,0 +1,5 @@
+ID_Test,ID_Productor,ID_Lote,Glifosato_ppm,Resultado,Timestamp,Operador
+T101,P001,L201,0.02,Aprobado,2026-08-20T10:30:00Z,Ricardo
+T102,P002,L202,0.00,Aprobado,2026-08-20T11:15:00Z,Juan
+T104,P004,L204,0.18,Alerta_Contaminacion,2026-08-21T09:00:00Z,Ricardo
+T105,P005,L205,0.01,Aprobado,2026-08-21T14:45:00Z,Juan

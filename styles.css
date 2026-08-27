@@ -1,0 +1,742 @@
+/* ==========================================================================
+   CafeTrace · styles.css
+   --------------------------------------------------------------------------
+   Paleta organica: verdes cafe/oliva, gris oscuro, blanco roto y alertas
+   en rojo/naranja. Layout CSS Grid pensado para tablet de supervisor
+   (breakpoint principal en 1024px).
+   ========================================================================== */
+
+/* ---------------------------- 1. Tokens ---------------------------------- */
+:root {
+  --verde-900: #26301f;
+  --verde-700: #3d4f31;
+  --verde-600: #4f6640;
+  --oliva-500: #6b7f4e;
+  --oliva-300: #a8bb8c;
+  --oliva-100: #e8eede;
+
+  --gris-900: #23231f;
+  --gris-700: #43433d;
+  --gris-500: #6f6f66;
+  --gris-300: #c9c9c0;
+  --gris-100: #eceae4;
+
+  --crema: #f7f5f0;
+  --blanco: #ffffff;
+
+  --ok: #3f8f5f;
+  --warn: #e0a80b;
+  --alto: #e2571e;
+  --critico: #c0392b;
+
+  --radio: 12px;
+  --radio-sm: 8px;
+  --sombra: 0 1px 2px rgba(35, 35, 31, .06), 0 6px 18px rgba(35, 35, 31, .07);
+  --sombra-sm: 0 1px 3px rgba(35, 35, 31, .10);
+
+  --fuente: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", "Consolas", monospace;
+}
+
+/* ---------------------------- 2. Base ------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fuente);
+  background: var(--crema);
+  color: var(--gris-900);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; font-weight: 600; }
+
+button { font-family: inherit; }
+
+/* ---------------------------- 3. Cabecera -------------------------------- */
+.ct-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+  background: var(--verde-900);
+  color: var(--oliva-100);
+  border-bottom: 3px solid var(--oliva-500);
+}
+
+.ct-brand { display: flex; align-items: center; gap: 14px; }
+
+.ct-logo {
+  font-size: 30px;
+  line-height: 1;
+  background: var(--oliva-500);
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.ct-header h1 { font-size: 21px; letter-spacing: -.01em; }
+
+.ct-header p {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--oliva-300);
+}
+
+.ct-header-meta { display: flex; align-items: center; gap: 12px; }
+
+.ct-origen {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--oliva-300);
+  background: rgba(255, 255, 255, .07);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ---------------------------- 4. Botones --------------------------------- */
+.ct-btn {
+  border: 1px solid transparent;
+  border-radius: var(--radio-sm);
+  padding: 9px 15px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .16s ease, border-color .16s ease, transform .06s ease;
+}
+
+.ct-btn:active { transform: translateY(1px); }
+
+.ct-btn--primario { background: var(--verde-600); color: #fff; }
+.ct-btn--primario:hover { background: var(--verde-700); }
+
+.ct-btn--ghost {
+  background: transparent;
+  color: inherit;
+  border-color: currentColor;
+  opacity: .85;
+}
+.ct-btn--ghost:hover { opacity: 1; background: rgba(255, 255, 255, .1); }
+
+.ct-panel .ct-btn--ghost { color: var(--gris-700); border-color: var(--gris-300); }
+.ct-panel .ct-btn--ghost:hover { background: var(--gris-100); }
+
+/* ---------------------------- 5. Layout Grid ----------------------------- */
+.ct-layout {
+  display: grid;
+  gap: 18px;
+  padding: 18px 24px 28px;
+  grid-template-columns: minmax(0, 1.55fr) minmax(320px, 1fr);
+  grid-template-areas:
+    "kpis   kpis"
+    "mapa   alertas"
+    "trace  trace"
+    "form   form";
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.ct-kpis   { grid-area: kpis; }
+.ct-panel--mapa    { grid-area: mapa; }
+.ct-panel--alertas { grid-area: alertas; }
+.ct-panel--trace   { grid-area: trace; }
+.ct-panel--form    { grid-area: form; }
+
+/* Tablet vertical y movil: una sola columna. */
+@media (max-width: 1024px) {
+  .ct-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "kpis" "mapa" "alertas" "trace" "form";
+    padding: 14px 14px 24px;
+  }
+  .ct-header { padding: 12px 14px; }
+}
+
+/* ---------------------------- 6. KPIs ------------------------------------ */
+.ct-kpis {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
+
+.ct-kpi {
+  background: var(--blanco);
+  border: 1px solid var(--gris-300);
+  border-left: 4px solid var(--oliva-500);
+  border-radius: var(--radio);
+  padding: 14px 16px;
+  box-shadow: var(--sombra-sm);
+}
+
+.ct-kpi h2 {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--gris-500);
+  font-weight: 600;
+}
+
+.ct-kpi-valor {
+  margin: 6px 0 2px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--verde-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.ct-kpi-sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--gris-500);
+}
+
+.ct-kpi--destacado { border-left-color: var(--ok); background: #f4faf5; }
+.ct-kpi--destacado .ct-kpi-valor { color: var(--ok); }
+
+.ct-kpi.is-danger { border-left-color: var(--critico); }
+.ct-kpi.is-danger .ct-kpi-valor { color: var(--critico); }
+
+.ct-kpi.is-warn { border-left-color: var(--warn); }
+.ct-kpi.is-warn .ct-kpi-valor { color: #a8790a; }
+
+/* ---------------------------- 7. Paneles --------------------------------- */
+.ct-panel {
+  background: var(--blanco);
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ct-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--gris-100);
+  background: linear-gradient(180deg, #fbfaf7, var(--blanco));
+}
+
+.ct-panel-head h3 {
+  font-size: 14.5px;
+  color: var(--verde-900);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ct-panel-hint {
+  font-size: 12px;
+  color: var(--gris-500);
+}
+
+.ct-viz { padding: 10px 12px 12px; min-height: 0; position: relative; }
+
+/* El arbol dimensiona su propio SVG; sin lote seleccionado manda .ct-empty. */
+.ct-viz--tree { min-height: 0; }
+
+/* Sin esto la tarjeta del mapa se estira a la altura del feed de alertas y
+   deja un hueco blanco debajo del SVG. */
+.ct-panel--mapa { align-self: start; }
+
+/* ---------------------------- 8. Mapa (D3) ------------------------------- */
+.ct-svg { display: block; overflow: visible; }
+
+/* El mapa si recorta: al hacer zoom, los departamentos vecinos no deben
+   desbordar la tarjeta. */
+.ct-mapa { overflow: hidden; background: #f2f4ec; border-radius: var(--radio-sm); }
+.ct-mapa:active { cursor: grabbing; }
+.ct-mapa { cursor: grab; }
+
+/* Barra de vistas del mapa */
+.ct-mapa-barra {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 2px 10px;
+}
+
+.ct-mapa-hint {
+  margin-left: auto;
+  font-size: 11.5px;
+  color: var(--gris-500);
+  font-style: italic;
+}
+
+/* Departamentos */
+.ct-dep {
+  fill: #e4e9da;
+  stroke: #ffffff;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke; /* el borde no engorda con el zoom */
+  transition: fill .2s ease;
+}
+
+.ct-dep.is-acopio { fill: var(--oliva-300); }
+
+.ct-cluster-num {
+  fill: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--fuente);
+  pointer-events: none;
+}
+
+.ct-marcador { cursor: pointer; }
+.ct-marcador--cluster { cursor: zoom-in; }
+
+.ct-vector {
+  stroke: var(--alto);
+  stroke-width: 1.6;
+  stroke-dasharray: 4 4;
+  opacity: .7;
+  vector-effect: non-scaling-stroke;
+}
+
+.ct-finca { cursor: pointer; }
+
+.ct-marca {
+  stroke-width: 2;
+  paint-order: stroke;
+  transition: opacity .15s ease;
+}
+
+.ct-finca:hover .ct-marca { stroke: var(--gris-900); }
+
+.ct-finca.is-selected .ct-marca {
+  stroke: var(--gris-900);
+  stroke-width: 3;
+}
+
+.ct-etiqueta {
+  font-size: 10.5px;
+  font-family: var(--mono);
+  fill: var(--gris-900);
+  pointer-events: none;
+  /* Halo blanco: la etiqueta se lee tambien sobre el relleno del mapa. */
+  stroke: rgba(255, 255, 255, .9);
+  stroke-width: 3;
+  paint-order: stroke fill;
+}
+
+.ct-pulso {
+  stroke-width: 2;
+  opacity: .7;
+  animation: ct-pulso 1.8s ease-out infinite;
+  /* En SVG, transform-origin se resuelve por defecto contra el viewBox
+     (transform-box: view-box), no contra el elemento: sin fill-box el
+     anillo se escalaba alrededor de la esquina del mapa y aparecia
+     desplazado respecto del marcador. */
+  transform-box: fill-box;
+  transform-origin: center;
+  vector-effect: non-scaling-stroke;
+}
+
+@keyframes ct-pulso {
+  0%   { opacity: .75; transform: scale(.92); }
+  70%  { opacity: 0;   transform: scale(1.35); }
+  100% { opacity: 0;   transform: scale(1.35); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ct-pulso { animation: none; opacity: .6; }
+}
+
+/* Mapa + leyenda lado a lado. El Peru es alto y angosto: en un panel ancho
+   sobra espacio horizontal, y la leyenda lo ocupa en vez de dejarlo vacio. */
+.ct-mapa-wrap { display: flex; align-items: stretch; min-width: 0; }
+.ct-mapa-wrap .ct-viz { flex: 1; min-width: 0; }
+
+/* Leyenda */
+.ct-leyenda {
+  flex: 0 0 196px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-left: 1px solid var(--gris-100);
+  font-size: 12px;
+  color: var(--gris-700);
+}
+
+@media (max-width: 1024px) {
+  .ct-mapa-wrap { flex-direction: column; }
+  .ct-leyenda {
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    padding: 10px 16px 14px;
+    border-left: none;
+    border-top: 1px solid var(--gris-100);
+  }
+}
+
+.ct-leyenda-item { display: inline-flex; align-items: center; gap: 6px; }
+
+.ct-leyenda-punto {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ct-leyenda-nota {
+  color: var(--gris-500);
+  font-style: italic;
+  line-height: 1.45;
+  align-items: flex-start;
+}
+
+/* ---------------------------- 9. Tooltip -------------------------------- */
+.ct-tooltip {
+  position: absolute;
+  z-index: 60;
+  width: 320px;
+  pointer-events: none;
+  background: var(--blanco);
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  box-shadow: 0 10px 30px rgba(35, 35, 31, .18);
+  font-size: 12.5px;
+  overflow: hidden;
+}
+
+.ct-tt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 12px;
+  border-left: 4px solid var(--oliva-500);
+  background: #fbfaf7;
+}
+
+.ct-tt-body {
+  margin: 0;
+  padding: 10px 12px;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 4px 10px;
+}
+
+.ct-tt-body dt {
+  color: var(--gris-500);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.ct-tt-body dd { margin: 0; color: var(--gris-900); }
+.ct-tt-body dd em { color: var(--gris-500); font-style: normal; }
+
+.ct-tt-warn { color: var(--alto); font-weight: 600; }
+
+.ct-tt-foot {
+  padding: 7px 12px;
+  background: var(--gris-100);
+  color: var(--gris-500);
+  font-size: 11px;
+}
+
+.ct-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  background: var(--oliva-500);
+}
+
+/* ---------------------------- 10. Arbol (D3) ----------------------------- */
+.ct-link {
+  fill: none;
+  stroke: var(--gris-300);
+  stroke-width: 2;
+}
+
+.ct-link--critico  { stroke: var(--critico); }
+.ct-link--rescate  { stroke: var(--ok); stroke-width: 2.6; }
+.ct-link--bloqueado{ stroke: var(--critico); stroke-dasharray: 6 5; opacity: .75; }
+.ct-link--faltante { stroke: var(--alto); stroke-dasharray: 5 4; }
+.ct-link--pendiente{ stroke: var(--alto); stroke-dasharray: 5 4; }
+.ct-link--ok       { stroke: var(--oliva-300); }
+
+.ct-corte {
+  fill: var(--critico);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ct-node rect {
+  fill: var(--blanco);
+  stroke: var(--gris-300);
+  stroke-width: 1.5;
+}
+
+.ct-node--origen   rect { stroke: var(--oliva-500); fill: #f8fbf4; }
+.ct-node--ok       rect { stroke: var(--ok); fill: #f4faf5; }
+.ct-node--critico  rect { stroke: var(--critico); fill: #fdf3f1; }
+.ct-node--faltante rect { stroke: var(--alto); fill: #fef6f1; stroke-dasharray: 5 4; }
+.ct-node--pendiente rect{ stroke: var(--alto); fill: #fef6f1; }
+.ct-node--bloqueado rect{ stroke: var(--critico); fill: #faf6f5; stroke-dasharray: 5 4; opacity: .8; }
+.ct-node--rescate  rect { stroke: var(--ok); fill: #eef8f1; stroke-width: 2.2; }
+
+.ct-node-etapa {
+  fill: var(--gris-500);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.ct-node-titulo { fill: var(--gris-900); font-size: 13.5px; font-weight: 700; }
+.ct-node-detalle { fill: var(--gris-500); font-size: 10.5px; }
+
+.ct-node--bloqueado .ct-node-titulo { text-decoration: line-through; fill: var(--gris-500); }
+
+.ct-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 220px;
+  padding: 24px;
+  text-align: center;
+  color: var(--gris-500);
+  font-size: 13.5px;
+}
+
+.ct-empty-ico { font-size: 22px; opacity: .5; }
+
+/* ---------------------------- 11. Alertas -------------------------------- */
+
+/* El limite de altura va en el FEED, no en el panel.
+   Un contenedor flex dimensionado solo por max-height no tiene altura
+   definida, asi que `flex: 1` se resuelve contra el contenido: el feed se
+   quedaba en su alto natural y el panel lo recortaba con overflow:hidden en
+   vez de scrollear. Con max-height sobre el propio .ct-feed el scroll no
+   depende de la resolucion flex, y ademas el panel encoge solo cuando hay
+   pocas alertas. */
+.ct-panel--alertas { align-self: start; }
+
+.ct-filtros {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gris-100);
+}
+
+.ct-chip {
+  border: 1px solid var(--gris-300);
+  background: var(--blanco);
+  color: var(--gris-700);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ct-chip:hover { background: var(--gris-100); }
+
+.ct-chip.is-active {
+  background: var(--verde-700);
+  border-color: var(--verde-700);
+  color: #fff;
+}
+
+.ct-feed {
+  max-height: min(68vh, 680px);
+  overflow-y: auto;
+  overscroll-behavior: contain; /* el scroll del feed no arrastra la pagina */
+  -webkit-overflow-scrolling: touch;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 0; /* imprescindible: habilita el scroll (ver nota arriba) */
+}
+
+/* Barra de scroll discreta, visible tambien en tablet. */
+.ct-feed::-webkit-scrollbar { width: 10px; }
+.ct-feed::-webkit-scrollbar-track { background: var(--gris-100); border-radius: 999px; }
+.ct-feed::-webkit-scrollbar-thumb {
+  background: var(--gris-300);
+  border-radius: 999px;
+  border: 2px solid var(--gris-100);
+}
+.ct-feed::-webkit-scrollbar-thumb:hover { background: var(--oliva-300); }
+.ct-feed { scrollbar-width: thin; scrollbar-color: var(--gris-300) var(--gris-100); }
+
+.ct-alerta {
+  border: 1px solid var(--gris-300);
+  border-left: 4px solid var(--gris-500);
+  border-radius: var(--radio-sm);
+  padding: 11px 13px;
+  background: var(--blanco);
+  cursor: pointer;
+  transition: box-shadow .15s ease, transform .08s ease;
+}
+
+.ct-alerta:hover { box-shadow: var(--sombra-sm); transform: translateX(2px); }
+.ct-alerta:focus-visible { outline: 2px solid var(--verde-600); outline-offset: 2px; }
+
+.ct-alerta--critica        { border-left-color: var(--critico); background: #fdf5f4; }
+.ct-alerta--inconsistencia { border-left-color: var(--alto);    background: #fef8f4; }
+.ct-alerta--monitoreo      { border-left-color: var(--warn);    background: #fffbf0; }
+.ct-alerta--auditoria      { border-left-color: var(--oliva-500); }
+
+.ct-alerta-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ct-alerta-tipo {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  color: var(--gris-700);
+}
+
+.ct-alerta--critica .ct-alerta-tipo        { color: var(--critico); }
+.ct-alerta--inconsistencia .ct-alerta-tipo { color: var(--alto); }
+.ct-alerta--monitoreo .ct-alerta-tipo      { color: #a8790a; }
+.ct-alerta--auditoria .ct-alerta-tipo      { color: var(--oliva-500); }
+
+.ct-alerta-meta { font-size: 10.5px; color: var(--gris-500); font-family: var(--mono); }
+
+.ct-alerta-titulo { font-size: 13.5px; margin: 0 0 4px; color: var(--gris-900); }
+
+.ct-alerta-cuerpo,
+.ct-alerta-impacto,
+.ct-alerta-accion {
+  margin: 0 0 4px;
+  font-size: 12.5px;
+  color: var(--gris-700);
+}
+
+.ct-alerta-impacto { font-weight: 600; color: var(--verde-700); }
+.ct-alerta--critica .ct-alerta-impacto { color: var(--ok); }
+
+.ct-alerta-accion { color: var(--gris-500); font-size: 12px; }
+.ct-alerta-accion strong { color: var(--gris-700); }
+
+.ct-feed-vacio { color: var(--gris-500); font-size: 13px; text-align: center; padding: 24px 0; }
+
+/* ---------------------------- 12. Formulario ----------------------------- */
+.ct-form { padding: 14px 16px 18px; }
+
+.ct-form-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  margin-top: 12px;
+}
+
+.ct-field { display: flex; flex-direction: column; gap: 5px; }
+.ct-field--entidad { max-width: 320px; }
+
+.ct-field label {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--gris-500);
+}
+
+.ct-field input,
+.ct-field select {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 11px;
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  background: var(--blanco);
+  color: var(--gris-900);
+  min-height: 42px; /* objetivo tactil comodo en tablet */
+}
+
+.ct-field input:focus,
+.ct-field select:focus {
+  outline: none;
+  border-color: var(--oliva-500);
+  box-shadow: 0 0 0 3px rgba(107, 127, 78, .18);
+}
+
+.ct-form-acciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.ct-form-estado { font-size: 12.5px; font-weight: 600; }
+.ct-form-estado.is-ok { color: var(--ok); }
+.ct-form-estado.is-error { color: var(--critico); }
+
+/* ---------------------------- 13. Pie ------------------------------------ */
+.ct-footer {
+  padding: 16px 24px 28px;
+  text-align: center;
+  color: var(--gris-500);
+  font-size: 11.5px;
+}
+
+.ct-footer p { margin: 0 auto; max-width: 820px; }
+
+/* ---------------------------- 14. Referencias del mapa ------------------- */
+
+/* Retícula y barra de escala: orientación y magnitud cuando el zoom deja
+   fuera de cuadro los límites departamentales. */
+.ct-graticula {
+  fill: none;
+  stroke: var(--gris-500);
+  stroke-width: .6;
+  stroke-dasharray: 2 4;
+  opacity: .35;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.ct-escala { pointer-events: none; }
+
+.ct-escala-linea {
+  stroke: var(--gris-700);
+  stroke-width: 1.6;
+}
+
+.ct-escala-texto {
+  fill: var(--gris-700);
+  font-size: 11px;
+  font-family: var(--mono);
+  font-weight: 600;
+  stroke: rgba(255, 255, 255, .9);
+  stroke-width: 3;
+  paint-order: stroke fill;
+}
+
+.ct-vector-rotulo { pointer-events: none; }
+
+.ct-etiqueta--dist {
+  fill: var(--alto);
+  font-weight: 700;
+}

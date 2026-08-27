@@ -1,0 +1,7 @@
+ID_Lote,ID_Productor,Peso_Quintales,Destino,Estado_Transito,Estado_Seguridad,Riesgo_Calculado
+L201,P001,150,Alemania,En_Acopio,Aprobado,Medio
+L202,P002,200,Belgica,En_Transito,Aprobado,Bajo
+L203,P003,300,Nacional,Vendido_Local,No_Aplica,Alto
+L204,P004,80,Pendiente,Segregado_Conventional,Rechazado,Critico
+L205,P005,120,Francia,En_Acopio,Aprobado,Bajo
+L206,P006,95,Paises_Bajos,En_Acopio,Pendiente_Verificacion,Bajo

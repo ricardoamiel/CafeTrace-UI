@@ -1,0 +1,135 @@
+Basado en los documentos Cafe Trace Disruptón 2026.pdf y disrupton-etapas.txt. Actúa como un Ingeniero de Software Senior y Diseñador de Visualización de Datos experto en D3.js. 
+Quiero crear la versión 1.0 (MVP) de la plataforma "CafeTrace", un pasaporte digital de trazabilidad para exportación de café orgánico peruano que ayuda a prevenir pérdidas por contaminación cruzada (como glifosato) en aduanas. 
+
+La plataforma debe ser completamente modular, interactiva, responsiva, estructurada en Vanilla JS moderno, HTML5, CSS3, y D3.js (v7), diseñada para ser desplegada estáticamente sin necesidad de backend activo en esta fase.
+
+### 1. ESTRUCTURA DE ARCHIVOS (MODULAR)
+Por favor, genera el código organizado bajo la siguiente estructura de archivos limpios y modulares:
+- /index.html (Archivo principal que importa los estilos y scripts)
+- /styles.css (Estilos modernos, paleta de colores orgánica: verdes café/oliva, gris oscuro, blanco y alertas en rojo/naranja)
+- /data/ (Carpeta contenedora de los datos sintéticos)
+  - productores.csv
+  - test_elisa.csv
+  - lotes_cafe.csv
+- /js/
+  - data-loader.js (Módulo para cargar y cruzar los CSVs/JSONs)
+  - app.js (Controlador principal y enrutador del dashboard)
+  - /modules/
+    - map-risk.js (Módulo D3.js para el mapa de riesgo geográfico)
+    - tree-trace.js (Módulo D3.js para el árbol de trazabilidad del lote)
+    - alerts-feed.js (Módulo JS para procesar inconsistencias y alertas)
+
+---
+
+### 2. ESQUEMA DE DATOS Y MOCK DATA (Para guardar en /data/)
+
+Genera muestras de datos sintéticos (al menos 5 registros por archivo), generar un formulario simple para añadir estos datos con las siguientes estructuras exactas en formato CSV:
+
+#### A. productores.csv
+Este archivo representa a los caficultores de la cooperativa.
+ID_Productor,Nombre,Finca,Coordenadas_Lat,Coordenadas_Lon,Certificacion_Declarada,Proximidad_Finca_Convencional
+P001,Mateo Quispe,Finca La Aurora,-6.2305,-77.8622,Organico,Alta
+P002,Lucia Huaman,Finca El Shambo,-6.2215,-77.8540,Organico,Baja
+P003,Juan Mendoza,Finca Las Palmeras,-6.2410,-77.8711,Convencional,N/A
+P004,Elena Flores,Finca Vista Hermosa,-6.2350,-77.8590,Organico,Alta
+P005,Carlos Ortiz,Finca Bella Vista,-6.2180,-77.8480,Organico,Baja
+
+#### B. test_elisa.csv
+Registro de los resultados de los kits rápidos de inmunoensayo en los centros de acopio.
+ID_Test,ID_Productor,ID_Lote,Glifosato_ppm,Resultado,Timestamp,Operador
+T101,P001,L201,0.02,Aprobado,2026-08-20T10:30:00Z,Ricardo
+T102,P002,L202,0.00,Aprobado,2026-08-20T11:15:00Z,Juan
+T104,P004,L204,0.18,Alerta_Contaminacion,2026-08-21T09:00:00Z,Ricardo
+T105,P005,L205,0.01,Aprobado,2026-08-21T14:45:00Z,Juan
+*Nota: El Productor P003 (Convencional) no requiere test ELISA orgánico obligatorio, pero el lote L203 asociado a él se considera convencional.*
+
+#### C. lotes_cafe.csv
+Consolidación de la producción para exportación.
+ID_Lote,ID_Productor,Peso_Quintales,Destino,Estado_Transito,Estado_Seguridad,Riesgo_Calculado
+L201,P001,150,Alemania,En_Acopio,Aprobado,Medio
+L202,P002,200,Belgica,En_Transito,Aprobado,Bajo
+L203,P003,300,Nacional,Vendido_Local,No_Aplica,Alto
+L204,P004,80,Pendiente,Segregado_Conventional,Rechazado,Critico
+L205,P005,120,Francia,En_Acopio,Aprobado,Bajo
+
+---
+
+### 3. PIPELINE DE FLUJO DE DATOS (En js/data-loader.js)
+Escribe funciones en JS con ES6 Promises/Fetch para:
+1. Cargar los tres archivos CSV concurrentemente con `d3.csv()`.
+2. Realizar un Inner Join lógico de datos: asociar cada Lote (`ID_Lote`) con su Productor (`ID_Productor`) y el resultado de su Test ELISA (`ID_Test`).
+3. Crear un motor de reglas (Rule Engine) simple que calcule un "Score de Riesgo" en tiempo de ejecución:
+   - Si `Certificacion_Declarada` == "Organico" pero `Glifosato_ppm` > 0.1 ppm -> Riesgo: "Crítico" (Acción: Segregar Lote inmediatamente para evitar penalizaciones de US$50/quintal en la UE).
+   - Si `Certificacion_Declarada` == "Organico" pero no existe un `ID_Test` asociado en `test_elisa.csv` -> Riesgo: "Alto" (Inconsistencia: Lote sin testear).
+   - Si `Certificacion_Declarada` == "Organico", `Glifosato_ppm` <= 0.1 ppm, y `Proximidad_Finca_Convencional` == "Alta" -> Riesgo: "Medio" (Monitorear por deriva potencial).
+4. Generar un log de auditoría en consola (`console.log`) en formato estructurado JSON que actúe como un Ledger del Pasaporte Digital para verificar la trazabilidad de punta a punta.
+
+---
+
+### 4. REQUERIMIENTOS DE VISUALIZACIÓN D3.js (En /js/modules/)
+
+#### Módulo 1: Mapa de Riesgo Geográfico (map-risk.js)
+- Utiliza un gráfico de dispersión bidimensional D3 (Scatterplot) que simule una cuadrícula espacial de las fincas de café basándose en las coordenadas Lat/Lon de `productores.csv`.
+- Dibuja círculos interactivos para cada finca. El tamaño del círculo debe ser proporcional al `Peso_Quintales` del lote asociado.
+- El color de los círculos debe reflejar su estado de riesgo: Verde (Bajo riesgo), Amarillo (Riesgo medio - proximidad convencional) y Rojo (Crítico - Glifosato detectado por ELISA).
+- Añade un Tooltip interactivo que muestre: Finca, Productor, Certificación, Glifosato (ppm) y Acción recomendada.
+
+#### Módulo 2: Árbol de Trazabilidad del Lote (tree-trace.js)
+- Implementa una visualización jerárquica de D3 (`d3.tree` o un diagrama de nodos enlazados interactivo).
+- Al hacer clic en una finca o lote en el dashboard, este módulo debe desplegar visualmente el camino del pasaporte de datos: 
+  `[Finca/Productor (Origen)] ---> [Test ELISA (Verificación)] ---> [Lote Consolidado (Destino)]`
+- Si el lote fue "Segregado" (Rechazado para exportación debido a glifosato), dibuja una bifurcación visual mostrando cómo se desvió el flujo hacia "Venta Convencional Local" para salvar el valor comercial del contenedor.
+
+#### Módulo 3: Panel de Alertas en Tiempo Real (alerts-feed.js)
+- Una sección lateral de la UI (HTML limpio manipulado con JS) que muestre un feed dinámico de anomalías críticas identificadas por el motor de reglas (por ejemplo: *"ALERTA CRÍTICA: Lote L204 de Finca Vista Hermosa registra 0.18 ppm de Glifosato. Lote segregado a Mercado Nacional. Ahorro estimado: US$ 4,000 al evitar penalizaciones"*).
+
+---
+
+### 5. DISEÑO DE INTERFAZ DE USUARIO (HTML & CSS)
+- La página web debe verse profesional, minimalista y adaptada para una tablet de supervisor de cooperativa.
+- Incluye KPIs en la parte superior: 
+  - Total Quintales Monitoreados.
+  - Tasa de Contaminación Cruzada (%).
+  - Ahorro Económico Estimado Proyectado (calculado dinámicamente como: `Quintales Segregados x US$50`).
+- Estructura el layout con CSS Grid (un área para KPIs, una columna izquierda para el Mapa de Riesgo, una columna derecha para el Panel de Alertas, y una sección inferior para el Árbol de Trazabilidad interactiva de D3).
+
+Por favor, genera código limpio, modular, bien comentado y listo para desplegar directamente.
+
+
+Finalmente, responder estas preguntas directamente en un .md, esta es una rpta inicial, modificarla si lo ves necesario o reformular las repuestas:
+
+=> Conexión con la plataforma digital, funciones específicas, ¿costo adicional por compra con o sin plataforma? mantenimiento de la plataforma, pago unico, suscripción?
+
+1. Conexión con la plataforma digital y funciones específicas
+Para que el proyecto sea viable a corto plazo y sumamente atractivo para las cooperativas y exportadoras, planteamos una arquitectura digital simplificada pero inteligente:
+¿Cómo es la conexión? (Lograble y de bajo costo): En lugar de integraciones complejas de hardware, la conexión es vía web/móvil. El operador en el centro de acopio registra manualmente el resultado cualitativo/cuantitativo del test ELISA rápido y lo asocia al lote mediante un formulario simple
+.
+Funciones específicas de Ciencia de Datos:
+Vinculación multidimensional: Cruzamos cada resultado del test con el lote, la finca de origen y la certificación declarada
+.
+Motor de reglas para inconsistencias: Detectamos lotes certificados que se saltaron el testeo o cuyos resultados no coinciden con la ubicación declarada
+.
+Modelado de riesgo espacial (Análisis de proximidad): Identificamos patrones de riesgo de contaminación cruzada por deriva analizando la cercanía geográfica de parcelas orgánicas a fincas de café convencional
+.
+Modelo de negocio y costos de la plataforma:
+Esquema de monetización: Proponemos un modelo de suscripción periódica (SaaS) para las cooperativas o un cobro por test realizado durante la campaña de acopio
+. Esto disminuye la barrera de adopción técnica y financiera.
+¿Costo adicional por compra con o sin plataforma? No se debe vender el kit ELISA de manera aislada. El valor real está en la trazabilidad que la plataforma otorga; por ende, el acceso a la plataforma viene integrado en el costo de los tests o se cobra como una suscripción de valor añadido para la exportadora
+.
+Mantenimiento: Al ser una plataforma web centralizada, el mantenimiento técnico corre por nuestra cuenta (incluido en la suscripción), lo que evita que las cooperativas requieran personal de TI local.
+
+2. Potencial de detección: Estimación del ahorro por detección de compuestos
+Como científicos de datos, nuestro argumento económico no es solo que "detectamos contaminación", sino que optimizamos las decisiones comerciales mediante la segregación inteligente de lotes
+.
+El problema financiero a mitigar: Cuando un comprador en el extranjero (como la Unión Europea) detecta contaminación por agroquímicos (como glifosato) en destino, el exportador enfrenta penalizaciones de precio de hasta US$ 50 por quintal, pierde el diferencial orgánico de todo el lote y arriesga la descertificación de su cooperativa
+.
+Sustento del ahorro (Cálculo lograble y directo): Tomando como base un escenario estándar donde una cooperativa mediana exporta 1,000 quintales de café declared orgánico
+:
+Si mediante nuestro análisis de datos y testeo preventivo logramos identificar y segregar a tiempo un 5% de los lotes en riesgo (50 quintales)
+.
+Esos 50 quintales contaminados se desvían para ser vendidos localmente como café convencional, evitando que contaminen y arruinen el valor del contenedor completo en el extranjero
+.
+El ahorro estimado directo es de aproximadamente US$ 2,500 en esa sola campaña al evitar las penalizaciones de US$ 50/quintal sobre ese volumen
+.
+A esto se le suma un valor incalculable: eliminar el riesgo de descertificación completa de la cooperativa, lo cual destruiría su acceso al mercado de valor agregado
+.

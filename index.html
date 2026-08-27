@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CafeTrace · Pasaporte Digital de Trazabilidad</title>
+  <meta name="description" content="Verificacion rapida de autenticidad organica y pasaporte digital de trazabilidad para cafe de exportacion.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="ct-header">
+    <div class="ct-brand">
+      <span class="ct-logo" aria-hidden="true">&#9749;</span>
+      <div>
+        <h1>CafeTrace</h1>
+        <p>Pasaporte digital de trazabilidad · cafe organico de exportacion</p>
+      </div>
+    </div>
+    <div class="ct-header-meta">
+      <span id="origen-datos" class="ct-origen">Cargando…</span>
+      <button type="button" id="btn-ledger" class="ct-btn ct-btn--ghost">Exportar ledger JSON</button>
+    </div>
+  </header>
+
+  <main class="ct-layout">
+
+    <!-- ================= KPIs ================= -->
+    <section class="ct-kpis" aria-label="Indicadores clave">
+      <article class="ct-kpi">
+        <h2>Quintales monitoreados</h2>
+        <p class="ct-kpi-valor" id="kpi-quintales">—</p>
+        <p class="ct-kpi-sub" id="kpi-quintales-sub"></p>
+      </article>
+
+      <article class="ct-kpi" id="kpi-card-tasa">
+        <h2>Tasa de contaminacion cruzada</h2>
+        <p class="ct-kpi-valor" id="kpi-tasa">—</p>
+        <p class="ct-kpi-sub" id="kpi-tasa-sub"></p>
+      </article>
+
+      <article class="ct-kpi ct-kpi--destacado">
+        <h2>Ahorro economico estimado</h2>
+        <p class="ct-kpi-valor" id="kpi-ahorro">—</p>
+        <p class="ct-kpi-sub" id="kpi-ahorro-sub"></p>
+      </article>
+
+      <article class="ct-kpi" id="kpi-card-cobertura">
+        <h2>Cobertura de testeo ELISA</h2>
+        <p class="ct-kpi-valor" id="kpi-cobertura">—</p>
+        <p class="ct-kpi-sub" id="kpi-cobertura-sub"></p>
+      </article>
+    </section>
+
+    <!-- ================= MAPA DE RIESGO ================= -->
+    <section class="ct-panel ct-panel--mapa" aria-label="Mapa de riesgo geografico">
+      <header class="ct-panel-head">
+        <h3>Mapa de riesgo geografico</h3>
+        <span class="ct-panel-hint">Clic en una finca para ver su pasaporte</span>
+      </header>
+      <div class="ct-mapa-wrap">
+        <div id="mapa-riesgo" class="ct-viz"></div>
+        <div id="mapa-leyenda" class="ct-leyenda"></div>
+      </div>
+    </section>
+
+    <!-- ================= ALERTAS ================= -->
+    <aside class="ct-panel ct-panel--alertas" aria-label="Panel de alertas">
+      <header class="ct-panel-head">
+        <h3>Alertas del motor de reglas</h3>
+        <span class="ct-panel-hint" id="alertas-contador"></span>
+      </header>
+      <div id="panel-alertas"></div>
+    </aside>
+
+    <!-- ================= ARBOL DE TRAZABILIDAD ================= -->
+    <section class="ct-panel ct-panel--trace" id="seccion-trazabilidad" aria-label="Arbol de trazabilidad">
+      <header class="ct-panel-head">
+        <h3>
+          Pasaporte de trazabilidad
+          <span class="ct-badge" id="trace-riesgo" hidden></span>
+        </h3>
+        <span class="ct-panel-hint" id="trace-subtitulo">Ningun lote seleccionado</span>
+      </header>
+      <div id="arbol-trazabilidad" class="ct-viz ct-viz--tree"></div>
+    </section>
+
+    <!-- ================= FORMULARIO DE ALTA ================= -->
+    <section class="ct-panel ct-panel--form" aria-label="Registro de datos en acopio">
+      <header class="ct-panel-head">
+        <h3>Registro en centro de acopio</h3>
+        <span class="ct-panel-hint">Los datos se guardan en este dispositivo</span>
+      </header>
+
+      <form id="form-registro" class="ct-form" autocomplete="off">
+        <div class="ct-field ct-field--entidad">
+          <label for="form-entidad">Tipo de registro</label>
+          <select id="form-entidad" name="entidad">
+            <option value="tests">Resultado de test ELISA</option>
+            <option value="lotes">Lote de cafe</option>
+            <option value="productores">Productor / finca</option>
+          </select>
+        </div>
+
+        <div id="form-campos" class="ct-form-grid"></div>
+
+        <div class="ct-form-acciones">
+          <button type="submit" class="ct-btn ct-btn--primario">Registrar y recalcular</button>
+          <button type="button" id="btn-limpiar" class="ct-btn ct-btn--ghost">Limpiar altas locales</button>
+          <span id="form-estado" class="ct-form-estado" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="ct-footer">
+    <p>
+      <strong>CafeTrace v1.0 (MVP)</strong> · Disrupton 2026 · Eje 1: sistemas de trazabilidad,
+      calidad y verificacion. Penalizacion de referencia: US$50 por quintal
+      (Gestion, 15/11/2019). Datos sinteticos de demostracion.
+    </p>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <!-- D3 v7 vendorizado: el dashboard debe funcionar sin internet en acopio. -->
+  <script src="vendor/d3.v7.min.js"></script>
+  <!-- Geometria del Peru como <script> y no como fetch: funciona en file://. -->
+  <script src="data/peru-departamentos.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/modules/map-risk.js"></script>
+  <script src="js/modules/tree-trace.js"></script>
+  <script src="js/modules/alerts-feed.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
