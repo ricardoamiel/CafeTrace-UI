@@ -47,7 +47,7 @@
       </article>
 
       <article class="ct-kpi" id="kpi-card-cobertura">
-        <h2>Cobertura de testeo ELISA</h2>
+        <h2>Cobertura del panel ELISA</h2>
         <p class="ct-kpi-valor" id="kpi-cobertura">—</p>
         <p class="ct-kpi-sub" id="kpi-cobertura-sub"></p>
       </article>
@@ -59,6 +59,10 @@
         <h3>Mapa de riesgo geografico</h3>
         <span class="ct-panel-hint">Clic en una finca para ver su pasaporte</span>
       </header>
+
+      <!-- Filtros transversales: acotan mapa, alertas y KPIs a la vez. -->
+      <div id="filtros-mapa"></div>
+
       <div class="ct-mapa-wrap">
         <div id="mapa-riesgo" class="ct-viz"></div>
         <div id="mapa-leyenda" class="ct-leyenda"></div>
@@ -73,6 +77,39 @@
       </header>
       <div id="panel-alertas"></div>
     </aside>
+
+    <!-- ================= PLAN DE SEGREGACION ================= -->
+    <section class="ct-panel ct-panel--plan" id="seccion-plan" aria-label="Plan de segregacion de lotes">
+      <header class="ct-panel-head">
+        <h3>
+          Plan de segregacion
+          <span class="ct-badge ct-badge--plan" id="plan-veredicto" hidden></span>
+        </h3>
+        <span class="ct-panel-hint" id="plan-alcance"></span>
+      </header>
+
+      <div class="ct-plan-barra">
+        <label class="ct-plan-control" for="plan-alfa">
+          <span>Tolerancia del contenedor</span>
+          <select id="plan-alfa">
+            <option value="0.01">1 % · muy exigente</option>
+            <option value="0.02">2 %</option>
+            <option value="0.03">3 %</option>
+            <option value="0.05" selected>5 % · acuerdo vigente</option>
+            <option value="0.08">8 %</option>
+            <option value="0.12">12 %</option>
+            <option value="0.20">20 % · permisivo</option>
+          </select>
+        </label>
+        <p class="ct-plan-nota" id="plan-nota"></p>
+        <button type="button" id="btn-plan-csv" class="ct-btn ct-btn--ghost">
+          Exportar plan CSV
+        </button>
+      </div>
+
+      <div class="ct-plan-kpis" id="plan-kpis"></div>
+      <div class="ct-plan-lista" id="plan-lista"></div>
+    </section>
 
     <!-- ================= ARBOL DE TRAZABILIDAD ================= -->
     <section class="ct-panel ct-panel--trace" id="seccion-trazabilidad" aria-label="Arbol de trazabilidad">
@@ -104,6 +141,7 @@
         </div>
 
         <div id="form-campos" class="ct-form-grid"></div>
+        <p id="form-lectura-hint" class="ct-form-hint"></p>
 
         <div class="ct-form-acciones">
           <button type="submit" class="ct-btn ct-btn--primario">Registrar y recalcular</button>
@@ -117,8 +155,9 @@
 
   <footer class="ct-footer">
     <p>
-      <strong>CafeTrace v1.0 (MVP)</strong> · Disrupton 2026 · Eje 1: sistemas de trazabilidad,
-      calidad y verificacion. Penalizacion de referencia: US$50 por quintal
+      <strong>CafeTrace v1.1 (MVP)</strong> · Disrupton 2026 · Eje 1: sistemas de trazabilidad,
+      calidad y verificacion. Panel de 4 kits ELISA (glifosato, clorpirifos,
+      cipermetrina, carbendazim). Penalizacion de referencia: US$50 por quintal
       (Gestion, 15/11/2019). Datos sinteticos de demostracion.
     </p>
   </footer>
@@ -129,6 +168,10 @@
   <!-- Geometria del Peru como <script> y no como fetch: funciona en file://. -->
   <script src="data/peru-departamentos.js"></script>
   <script src="js/data-loader.js"></script>
+  <script src="js/modules/ingesta.js"></script>
+  <script src="js/modules/advisor.js"></script>
+  <script src="js/modules/map-filters.js"></script>
+  <script src="js/modules/optimizer.js"></script>
   <script src="js/modules/map-risk.js"></script>
   <script src="js/modules/tree-trace.js"></script>
   <script src="js/modules/alerts-feed.js"></script>

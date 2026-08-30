@@ -1,0 +1,50 @@
+[
+  {
+    "agroquimico": "Glifosato",
+    "clase": "Herbicida",
+    "kit": "ELISA_GLY_96",
+    "tipo_lectura": "Cuantitativo",
+    "umbral_ppm": 0.1,
+    "lod_ppm": 0.01,
+    "p_uso_vecino": 0.62,
+    "dosis_lindero": 2.2,
+    "persistencia": 1.0,
+    "afinidad_equipo": 0.55
+  },
+  {
+    "agroquimico": "Clorpirifos",
+    "clase": "Insecticida organofosforado",
+    "kit": "ELISA_CPF_96",
+    "tipo_lectura": "Cuantitativo",
+    "umbral_ppm": 0.05,
+    "lod_ppm": 0.005,
+    "p_uso_vecino": 0.44,
+    "dosis_lindero": 1.1,
+    "persistencia": 0.85,
+    "afinidad_equipo": 0.7
+  },
+  {
+    "agroquimico": "Cipermetrina",
+    "clase": "Insecticida piretroide",
+    "kit": "ELISA_PYR_48",
+    "tipo_lectura": "Cualitativo",
+    "umbral_ppm": null,
+    "lod_ppm": 0.045,
+    "p_uso_vecino": 0.38,
+    "dosis_lindero": 0.9,
+    "persistencia": 0.7,
+    "afinidad_equipo": 0.8
+  },
+  {
+    "agroquimico": "Carbendazim",
+    "clase": "Fungicida bencimidazol",
+    "kit": "ELISA_CBZ_96",
+    "tipo_lectura": "Cuantitativo",
+    "umbral_ppm": 0.1,
+    "lod_ppm": 0.01,
+    "p_uso_vecino": 0.35,
+    "dosis_lindero": 1.4,
+    "persistencia": 0.95,
+    "afinidad_equipo": 0.45
+  }
+]

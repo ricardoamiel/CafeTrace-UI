@@ -1,0 +1,87 @@
+{
+  "generado_en": "2026-08-30T04:37:35+00:00",
+  "fuente": "data/clean/elisa/elisa_lote.csv",
+  "lotes_base": 4200,
+  "panel": [
+    "Glifosato",
+    "Clorpirifos",
+    "Cipermetrina",
+    "Carbendazim"
+  ],
+  "mediana_distancia_lindero_m": 213.8,
+  "sensibilidad_residual": 0.02,
+  "nota_metodo": "Frecuencia conjunta observada, no producto de marginales: los kits comparten causa y el supuesto de independencia sobreestima el riesgo.",
+  "marginales_por_kit": {
+    "Alta": {
+      "Glifosato": 0.11602,
+      "Clorpirifos": 0.13715,
+      "Cipermetrina": 0.14138,
+      "Carbendazim": 0.01315
+    },
+    "Baja": {
+      "Glifosato": 0.04925,
+      "Clorpirifos": 0.10237,
+      "Cipermetrina": 0.11299,
+      "Carbendazim": 0.01111
+    },
+    "Global": {
+      "Glifosato": 0.0831,
+      "Clorpirifos": 0.12,
+      "Cipermetrina": 0.12738,
+      "Carbendazim": 0.01214
+    }
+  },
+  "probabilidad_algun_hallazgo": {
+    "Alta": {
+      "Glifosato": 0.11602,
+      "Clorpirifos": 0.13715,
+      "Cipermetrina": 0.14138,
+      "Carbendazim": 0.01315,
+      "Glifosato|Clorpirifos": 0.19868,
+      "Glifosato|Cipermetrina": 0.21841,
+      "Glifosato|Carbendazim": 0.12071,
+      "Clorpirifos|Cipermetrina": 0.24096,
+      "Clorpirifos|Carbendazim": 0.14937,
+      "Cipermetrina|Carbendazim": 0.15171,
+      "Glifosato|Clorpirifos|Cipermetrina": 0.28276,
+      "Glifosato|Clorpirifos|Carbendazim": 0.20338,
+      "Glifosato|Cipermetrina|Carbendazim": 0.22264,
+      "Clorpirifos|Cipermetrina|Carbendazim": 0.25082,
+      "Glifosato|Clorpirifos|Cipermetrina|Carbendazim": 0.28699
+    },
+    "Baja": {
+      "Glifosato": 0.04925,
+      "Clorpirifos": 0.10237,
+      "Cipermetrina": 0.11299,
+      "Carbendazim": 0.01111,
+      "Glifosato|Clorpirifos": 0.14148,
+      "Glifosato|Cipermetrina": 0.15307,
+      "Glifosato|Carbendazim": 0.05843,
+      "Clorpirifos|Cipermetrina": 0.19121,
+      "Clorpirifos|Carbendazim": 0.11202,
+      "Cipermetrina|Carbendazim": 0.12313,
+      "Glifosato|Clorpirifos|Cipermetrina": 0.22405,
+      "Glifosato|Clorpirifos|Carbendazim": 0.14969,
+      "Glifosato|Cipermetrina|Carbendazim": 0.16127,
+      "Clorpirifos|Cipermetrina|Carbendazim": 0.1999,
+      "Glifosato|Clorpirifos|Cipermetrina|Carbendazim": 0.23129
+    },
+    "Global": {
+      "Glifosato": 0.0831,
+      "Clorpirifos": 0.12,
+      "Cipermetrina": 0.12738,
+      "Carbendazim": 0.01214,
+      "Glifosato|Clorpirifos": 0.17048,
+      "Glifosato|Cipermetrina": 0.18619,
+      "Glifosato|Carbendazim": 0.09,
+      "Clorpirifos|Cipermetrina": 0.21643,
+      "Clorpirifos|Carbendazim": 0.13095,
+      "Cipermetrina|Carbendazim": 0.13762,
+      "Glifosato|Clorpirifos|Cipermetrina": 0.25381,
+      "Glifosato|Clorpirifos|Carbendazim": 0.1769,
+      "Glifosato|Cipermetrina|Carbendazim": 0.19238,
+      "Clorpirifos|Cipermetrina|Carbendazim": 0.22571,
+      "Glifosato|Clorpirifos|Cipermetrina|Carbendazim": 0.25952
+    }
+  }
+}

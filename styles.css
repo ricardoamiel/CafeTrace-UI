@@ -89,6 +89,18 @@ button { font-family: inherit; }
 
 .ct-header-meta { display: flex; align-items: center; gap: 12px; }
 
+/* Punto verde cuando el servidor de ingesta esta escribiendo en los CSV. */
+.ct-origen.is-escribe::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #8fd3a4;
+  vertical-align: middle;
+}
+
 .ct-origen {
   font-family: var(--mono);
   font-size: 11.5px;
@@ -134,6 +146,7 @@ button { font-family: inherit; }
   grid-template-areas:
     "kpis   kpis"
     "mapa   alertas"
+    "plan   plan"
     "trace  trace"
     "form   form";
   max-width: 1680px;
@@ -143,6 +156,7 @@ button { font-family: inherit; }
 .ct-kpis   { grid-area: kpis; }
 .ct-panel--mapa    { grid-area: mapa; }
 .ct-panel--alertas { grid-area: alertas; }
+.ct-panel--plan    { grid-area: plan; }
 .ct-panel--trace   { grid-area: trace; }
 .ct-panel--form    { grid-area: form; }
 
@@ -150,7 +164,7 @@ button { font-family: inherit; }
 @media (max-width: 1024px) {
   .ct-layout {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "kpis" "mapa" "alertas" "trace" "form";
+    grid-template-areas: "kpis" "mapa" "alertas" "plan" "trace" "form";
     padding: 14px 14px 24px;
   }
   .ct-header { padding: 12px 14px; }
@@ -623,23 +637,486 @@ button { font-family: inherit; }
 
 .ct-alerta-meta { font-size: 10.5px; color: var(--gris-500); font-family: var(--mono); }
 
-.ct-alerta-titulo { font-size: 13.5px; margin: 0 0 4px; color: var(--gris-900); }
+/* Titulo: es un boton, abre el pasaporte del lote. */
+.ct-alerta-titulo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 8px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: 600 13.5px/1.35 var(--fuente);
+  color: var(--gris-900);
+  cursor: pointer;
+}
 
-.ct-alerta-cuerpo,
-.ct-alerta-impacto,
-.ct-alerta-accion {
-  margin: 0 0 4px;
+.ct-alerta-titulo:hover { color: var(--verde-700); text-decoration: underline; }
+.ct-alerta-titulo:focus-visible { outline: 2px solid var(--verde-600); outline-offset: 2px; }
+
+/* --- Los cuatro bullets: la tarjeta no muestra nada mas sin desplegar. --- */
+.ct-alerta-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.ct-alerta-bullets li {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 8px;
+  align-items: baseline;
   font-size: 12.5px;
+  position: relative;
+  padding-left: 12px;
+}
+
+/* Vineta dibujada: mantiene la grilla de dos columnas alineada. */
+.ct-alerta-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: .55em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gris-300);
+}
+
+.ct-bullet-k {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--gris-500);
+}
+
+.ct-bullet-v { color: var(--gris-900); min-width: 0; overflow-wrap: anywhere; }
+
+/* Pastilla del resultado del test: la respuesta binaria, legible de un vistazo. */
+.ct-pastilla {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: #fff;
+}
+
+.ct-pastilla.is-malo    { background: var(--critico); }
+.ct-pastilla.is-parcial { background: var(--alto); }
+.ct-pastilla.is-sin     { background: var(--gris-500); }
+.ct-pastilla.is-bueno   { background: var(--ok); }
+
+/* --- Pie de la tarjeta --- */
+.ct-alerta-pie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.ct-vermas,
+.ct-verpasaporte {
+  border: 0;
+  background: none;
+  padding: 2px 0;
+  font: 600 11.5px/1 var(--fuente);
+  color: var(--verde-700);
+  cursor: pointer;
+  letter-spacing: .02em;
+}
+
+.ct-vermas::before { content: "▸ "; }
+.ct-vermas[aria-expanded="true"]::before { content: "▾ "; }
+
+.ct-verpasaporte { color: var(--gris-500); margin-left: auto; }
+
+.ct-vermas:hover,
+.ct-verpasaporte:hover { text-decoration: underline; }
+
+.ct-vermas:focus-visible,
+.ct-verpasaporte:focus-visible { outline: 2px solid var(--verde-600); outline-offset: 2px; }
+
+/* --- Detalle desplegable: analisis parametrizado (advisor.js) --- */
+.ct-alerta-detalle {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--gris-300);
+  font-size: 12px;
   color: var(--gris-700);
 }
 
-.ct-alerta-impacto { font-weight: 600; color: var(--verde-700); }
-.ct-alerta--critica .ct-alerta-impacto { color: var(--ok); }
+.ct-alerta-detalle[hidden] { display: none; }
 
-.ct-alerta-accion { color: var(--gris-500); font-size: 12px; }
-.ct-alerta-accion strong { color: var(--gris-700); }
+.ct-detalle-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ct-detalle-prioridad {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.ct-detalle-prioridad.is-critica { color: var(--critico); }
+.ct-detalle-prioridad.is-alta    { color: var(--alto); }
+.ct-detalle-prioridad.is-media   { color: #a8790a; }
+.ct-detalle-prioridad.is-baja    { color: var(--ok); }
+
+.ct-detalle-score { font-family: var(--mono); font-size: 10.5px; color: var(--gris-500); }
+
+.ct-detalle-barra {
+  height: 5px;
+  border-radius: 999px;
+  background: var(--gris-100);
+  overflow: hidden;
+  margin: 5px 0 10px;
+}
+
+.ct-detalle-barra span { display: block; height: 100%; border-radius: 999px; }
+.ct-detalle-barra .is-critica { background: var(--critico); }
+.ct-detalle-barra .is-alta    { background: var(--alto); }
+.ct-detalle-barra .is-media   { background: var(--warn); }
+.ct-detalle-barra .is-baja    { background: var(--ok); }
+
+.ct-detalle-motivo { margin: 0 0 10px; }
+
+.ct-detalle-titulo {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--gris-500);
+  margin: 10px 0 5px;
+}
+
+.ct-detalle-factores { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+
+.ct-detalle-factores li {
+  padding-left: 9px;
+  border-left: 2px solid var(--gris-300);
+  line-height: 1.42;
+}
+
+.ct-detalle-factores strong { color: var(--gris-900); }
+
+.ct-detalle-puntos {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--gris-500);
+}
+
+.ct-detalle-eco {
+  margin: 10px 0 0;
+  padding: 7px 9px;
+  border-radius: var(--radio-sm);
+  background: var(--oliva-100);
+  color: var(--verde-700);
+}
+
+.ct-detalle-acciones { margin: 0; padding-left: 18px; display: grid; gap: 5px; }
+.ct-detalle-acciones li { line-height: 1.42; }
+
+.ct-detalle-panel { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+
+.ct-detalle-panel th,
+.ct-detalle-panel td {
+  text-align: left;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--gris-100);
+  font-weight: 400;
+}
+
+.ct-detalle-panel th { font-weight: 600; color: var(--gris-900); }
+.ct-detalle-panel tr.is-hallazgo th,
+.ct-detalle-panel tr.is-hallazgo td { color: var(--critico); font-weight: 600; }
+.ct-detalle-umbral { color: var(--gris-500); font-family: var(--mono); font-size: 10.5px; }
+
+.ct-detalle-nota {
+  margin: 10px 0 0;
+  font-size: 10.5px;
+  color: var(--gris-500);
+  font-style: italic;
+  line-height: 1.4;
+}
 
 .ct-feed-vacio { color: var(--gris-500); font-size: 13px; text-align: center; padding: 24px 0; }
+
+/* ------------------- 11b. Filtros del mapa (transversales) --------------- */
+.ct-filtros-mapa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--gris-100);
+  background: #fbfaf7;
+}
+
+.ct-filtro { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+
+.ct-filtro-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--gris-500);
+}
+
+.ct-filtro-select {
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 9px;
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  background: var(--blanco);
+  color: var(--gris-900);
+  min-height: 38px;
+  width: 100%;
+  /* Nombres largos de exportadora no deben ensanchar la grilla. */
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+
+.ct-filtro-select:focus {
+  outline: none;
+  border-color: var(--oliva-500);
+  box-shadow: 0 0 0 3px rgba(107, 127, 78, .18);
+}
+
+/* El pie ocupa la fila completa por debajo de los cuatro combos. */
+.ct-filtros-pie {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ct-filtros-resumen { font-size: 11.5px; color: var(--gris-500); }
+.ct-filtros-resumen.is-activo { color: var(--verde-700); font-weight: 600; }
+
+.ct-filtros-reset { padding: 5px 10px; font-size: 11.5px; min-height: 0; }
+.ct-filtros-reset[hidden] { display: none; }
+
+/* Los KPIs responden al filtro: se marca para que nadie lea el subconjunto
+   como si fuera el total de la cooperativa. */
+.ct-kpis.is-filtrado .ct-kpi { border-top: 2px solid var(--oliva-300); }
+
+.ct-kpis.is-filtrado .ct-kpi:first-child::after {
+  content: "seleccion filtrada";
+  display: block;
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--oliva-500);
+}
+
+/* ------------------- 11c. Plan de segregacion ---------------------------- */
+.ct-panel--plan { align-self: start; }
+
+.ct-badge--plan { font-size: 10px; letter-spacing: .06em; }
+
+/* --- Barra de control: tolerancia, nota y exportacion --- */
+.ct-plan-barra {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--gris-100);
+  background: #fbfaf7;
+}
+
+.ct-plan-control { display: flex; flex-direction: column; gap: 4px; }
+
+.ct-plan-control > span {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--gris-500);
+}
+
+.ct-plan-control select {
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 9px;
+  min-height: 38px;
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  background: var(--blanco);
+  color: var(--gris-900);
+}
+
+.ct-plan-control select:focus {
+  outline: none;
+  border-color: var(--oliva-500);
+  box-shadow: 0 0 0 3px rgba(107, 127, 78, .18);
+}
+
+.ct-plan-nota {
+  flex: 1 1 260px;
+  margin: 0 0 8px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--gris-500);
+  min-width: 0;
+}
+
+.ct-plan-nota strong { color: var(--gris-700); }
+.ct-plan-nota.is-alerta { color: var(--critico); }
+
+#btn-plan-csv { margin-bottom: 4px; }
+
+/* --- Franja de indicadores del plan --- */
+.ct-plan-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 1px;
+  background: var(--gris-100);
+  border-bottom: 1px solid var(--gris-100);
+}
+
+.ct-plan-kpi { background: var(--blanco); padding: 12px 16px; }
+
+.ct-plan-kpi h4 {
+  margin: 0 0 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gris-500);
+}
+
+.ct-plan-kpi p { margin: 0; font-size: 19px; font-weight: 700; color: var(--gris-900); }
+.ct-plan-kpi span { display: block; margin-top: 3px; font-size: 11px; color: var(--gris-500); }
+
+.ct-plan-kpi.is-ok p     { color: var(--ok); }
+.ct-plan-kpi.is-alerta p { color: var(--critico); }
+.ct-plan-kpi.is-warn p   { color: #a8790a; }
+
+/* --- Tarjetas de decision por lote --- */
+.ct-plan-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  gap: 10px;
+  padding: 14px 16px 16px;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.ct-plan-lista::-webkit-scrollbar { width: 10px; }
+.ct-plan-lista::-webkit-scrollbar-track { background: var(--gris-100); border-radius: 999px; }
+.ct-plan-lista::-webkit-scrollbar-thumb {
+  background: var(--gris-300);
+  border-radius: 999px;
+  border: 2px solid var(--gris-100);
+}
+.ct-plan-lista { scrollbar-width: thin; scrollbar-color: var(--gris-300) var(--gris-100); }
+
+.ct-plan-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  padding: 11px 13px;
+  border: 1px solid var(--gris-300);
+  border-left: 4px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  background: var(--blanco);
+  cursor: pointer;
+  transition: box-shadow .12s ease, transform .12s ease;
+}
+
+.ct-plan-card:hover { box-shadow: var(--sombra-sm); transform: translateY(-1px); }
+.ct-plan-card:focus-visible { outline: 2px solid var(--verde-600); outline-offset: 2px; }
+
+.ct-plan-card.is-exporta   { border-left-color: var(--ok); background: #f6fbf7; }
+.ct-plan-card.is-segrega   { border-left-color: var(--alto); background: #fefaf6; }
+.ct-plan-card.is-cuarentena{ border-left-color: var(--critico); background: #fdf5f4; }
+.ct-plan-card.is-fuera     { border-left-color: var(--gris-300); background: var(--gris-100); opacity: .85; }
+
+.ct-plan-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.ct-plan-lote { font-family: var(--mono); font-size: 12.5px; font-weight: 700; color: var(--gris-900); }
+
+.ct-plan-decision {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.is-exporta    .ct-plan-decision { color: var(--ok); }
+.is-segrega    .ct-plan-decision { color: var(--alto); }
+.is-cuarentena .ct-plan-decision { color: var(--critico); }
+.is-fuera      .ct-plan-decision { color: var(--gris-500); }
+
+.ct-plan-finca { font-size: 12px; color: var(--gris-700); margin: 0 0 6px; }
+
+/* Barra de probabilidad. Da magnitud sin obligar a leer el numero. */
+.ct-plan-riesgo { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+
+.ct-plan-barra-p {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--gris-100);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.ct-plan-barra-p span { display: block; height: 100%; border-radius: 999px; background: var(--oliva-500); }
+.ct-plan-barra-p span.is-alto { background: var(--critico); }
+.ct-plan-barra-p span.is-medio { background: var(--warn); }
+
+.ct-plan-p {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gris-700);
+  white-space: nowrap;
+}
+
+.ct-plan-origen {
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--gris-500);
+  white-space: nowrap;
+}
+
+.ct-plan-motivo { margin: 0; font-size: 11.5px; line-height: 1.4; color: var(--gris-700); }
+
+.ct-plan-vacio {
+  grid-column: 1 / -1;
+  padding: 26px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gris-500);
+}
+
+@media (max-width: 640px) {
+  .ct-plan-barra { flex-direction: column; align-items: stretch; }
+  .ct-plan-lista { grid-template-columns: 1fr; max-height: none; }
+}
 
 /* ---------------------------- 12. Formulario ----------------------------- */
 .ct-form { padding: 14px 16px 18px; }
@@ -653,6 +1130,17 @@ button { font-family: inherit; }
 
 .ct-field { display: flex; flex-direction: column; gap: 5px; }
 .ct-field--entidad { max-width: 320px; }
+
+/* [hidden] no gana contra display:flex: hay que declararlo. Lo usa
+   sincronizarLectura() para alternar ppm / lectura cualitativa. */
+.ct-field[hidden] { display: none; }
+
+.ct-form-hint {
+  margin: 10px 0 0;
+  font-size: 11.5px;
+  color: var(--gris-500);
+  font-family: var(--mono);
+}
 
 .ct-field label {
   font-size: 11.5px;
@@ -692,6 +1180,7 @@ button { font-family: inherit; }
 .ct-form-estado { font-size: 12.5px; font-weight: 600; }
 .ct-form-estado.is-ok { color: var(--ok); }
 .ct-form-estado.is-error { color: var(--critico); }
+.ct-form-estado.is-aviso { color: #a8790a; }
 
 /* ---------------------------- 13. Pie ------------------------------------ */
 .ct-footer {

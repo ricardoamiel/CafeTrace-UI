@@ -245,12 +245,35 @@
     /* ------------------------------------------------------------------
        Tooltips
        ------------------------------------------------------------------ */
-    function contenidoFinca(r) {
-      var ppm =
-        r.Glifosato_ppm === null
-          ? '<span class="ct-tt-warn">sin test ELISA</span>'
-          : r.Glifosato_ppm.toFixed(2) + ' ppm';
+    /** Resumen del panel ELISA en una linea: lo detectado o lo que falta. */
+    function resumenPanel(r) {
+      if (r.Certificacion_Declarada !== 'Organico') {
+        return 'no aplica (lote convencional)';
+      }
+      if (!r.Kits_Ejecutados) {
+        return '<span class="ct-tt-warn">panel sin ejecutar (0/' +
+          r.Kits_Totales + ')</span>';
+      }
+      if (r.Hallazgos.length) {
+        return '<span class="ct-tt-warn">' +
+          r.Hallazgos
+            .map(function (h) {
+              return h.Tipo_Lectura === 'Cualitativo'
+                ? h.Agroquimico + ' detectado'
+                : h.Agroquimico + ' ' + h.Valor_ppm.toFixed(2) + ' ppm';
+            })
+            .join(' · ') +
+          '</span>';
+      }
+      if (r.Kits_Faltantes.length) {
+        return r.Kits_Ejecutados + '/' + r.Kits_Totales +
+          ' kits conformes · <span class="ct-tt-warn">faltan ' +
+          r.Kits_Faltantes.join(', ') + '</span>';
+      }
+      return r.Kits_Totales + '/' + r.Kits_Totales + ' kits conformes';
+    }
 
+    function contenidoFinca(r) {
       return (
         '<div class="ct-tt-head" style="border-color:' + colorDe(r.Riesgo) + '">' +
         '<strong>' + r.Finca + '</strong>' +
@@ -258,12 +281,14 @@
         r.Riesgo + '</span></div>' +
         '<dl class="ct-tt-body">' +
         '<dt>Productor</dt><dd>' + r.Nombre + ' · ' + r.ID_Productor + '</dd>' +
+        '<dt>Exportadora</dt><dd>' + r.Empresa_Exportadora + '</dd>' +
         '<dt>Certificacion</dt><dd>' + r.Certificacion_Declarada +
         ' <em>(proximidad ' + r.Proximidad_Finca_Convencional + ')</em></dd>' +
-        '<dt>Glifosato</dt><dd>' + ppm + '</dd>' +
+        '<dt>Panel ELISA</dt><dd>' + resumenPanel(r) + '</dd>' +
         '<dt>Coordenadas</dt><dd>' + r.lat.toFixed(4) + ', ' + r.lon.toFixed(4) + '</dd>' +
         '<dt>Lote</dt><dd>' + r.ID_Lote + ' · ' + r.Peso_Quintales +
-        ' qq · ' + r.Destino + '</dd>' +
+        ' qq (' + r.Tamano_Lote.toLowerCase() + ') · ' + r.Destino.replace(/_/g, ' ') +
+        '</dd>' +
         '<dt>Accion</dt><dd>' + r.Accion + '</dd>' +
         '</dl>' +
         '<div class="ct-tt-foot">Clic para abrir el pasaporte de trazabilidad</div>'
@@ -272,8 +297,8 @@
 
     function contenidoCluster(c) {
       var criticos = c.registros.filter(function (r) { return r.Segregado; }).length;
-      var sinTest = c.registros.filter(function (r) {
-        return r.Certificacion_Declarada === 'Organico' && !r.ID_Test;
+      var sinPanel = c.registros.filter(function (r) {
+        return r.Certificacion_Declarada === 'Organico' && r.Kits_Faltantes.length > 0;
       }).length;
 
       return (
@@ -285,7 +310,7 @@
         '<dt>Fincas</dt><dd>' + c.registros.length + '</dd>' +
         '<dt>Volumen</dt><dd>' + d3.format(',')(c.quintales) + ' quintales</dd>' +
         '<dt>Criticos</dt><dd>' + criticos + ' lote(s) para segregar</dd>' +
-        '<dt>Sin testear</dt><dd>' + sinTest + ' lote(s) organico(s)</dd>' +
+        '<dt>Panel abierto</dt><dd>' + sinPanel + ' lote(s) organico(s) sin cerrar</dd>' +
         '</dl>' +
         '<div class="ct-tt-foot">Clic para acercar a la zona de acopio</div>'
       );

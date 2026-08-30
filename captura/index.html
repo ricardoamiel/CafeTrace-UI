@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3d4f31">
+  <title>CafeTrace · Registro de campo</title>
+  <meta name="description" content="Formulario de captura de campo para el panel ELISA y el cuaderno digital del tecnico.">
+  <link rel="stylesheet" href="captura.css">
+</head>
+<body>
+
+  <header class="cp-header">
+    <span class="cp-logo" aria-hidden="true">&#9749;</span>
+    <div>
+      <h1>Registro de campo</h1>
+      <p id="cp-conexion" class="cp-conexion">Conectando…</p>
+    </div>
+  </header>
+
+  <main class="cp-main">
+
+    <form id="cp-form" autocomplete="off" novalidate>
+
+      <!-- ============ PASO 1. QUE LOTE ============ -->
+      <section class="cp-bloque">
+        <h2><span class="cp-paso">1</span> Lote</h2>
+
+        <label class="cp-campo" for="cp-lote">
+          <span>Lote</span>
+          <select id="cp-lote" name="lote" required></select>
+        </label>
+
+        <p id="cp-lote-info" class="cp-info"></p>
+      </section>
+
+      <!-- ============ PASO 2. RESULTADO DEL KIT ============ -->
+      <section class="cp-bloque">
+        <h2><span class="cp-paso">2</span> Resultado del kit</h2>
+
+        <label class="cp-campo" for="cp-agro">
+          <span>Agroquimico</span>
+          <select id="cp-agro" name="agroquimico" required></select>
+        </label>
+
+        <p id="cp-kit-info" class="cp-info"></p>
+
+        <label class="cp-campo" id="cp-campo-ppm" for="cp-ppm">
+          <span>Concentracion en ppm</span>
+          <input id="cp-ppm" name="ppm" type="number" step="0.001" min="0"
+                 inputmode="decimal" placeholder="0.000">
+        </label>
+
+        <fieldset class="cp-campo" id="cp-campo-lectura">
+          <legend>Lectura del kit</legend>
+          <div class="cp-opciones">
+            <label class="cp-opcion">
+              <input type="radio" name="lectura" value="No_Detectado" checked>
+              <span>No detectado</span>
+            </label>
+            <label class="cp-opcion">
+              <input type="radio" name="lectura" value="Detectado">
+              <span>Detectado</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <label class="cp-campo" for="cp-operador">
+          <span>Operador</span>
+          <input id="cp-operador" name="operador" type="text" list="cp-operadores"
+                 placeholder="Nombre del tecnico" required>
+          <datalist id="cp-operadores"></datalist>
+        </label>
+      </section>
+
+      <!-- ============ PASO 3. CUADERNO DE CAMPO (OPCIONAL) ============ -->
+      <section class="cp-bloque">
+        <h2>
+          <span class="cp-paso">3</span> Cuaderno de campo
+          <button type="button" id="cp-toggle" class="cp-toggle" aria-expanded="false">
+            mostrar
+          </button>
+        </h2>
+        <p class="cp-nota">
+          Opcional. Alimenta el modelo de riesgo, no el resultado del kit.
+        </p>
+
+        <div id="cp-campo-extra" hidden>
+
+          <fieldset class="cp-campo">
+            <legend>El vecino convencional fumigo hace poco</legend>
+            <div class="cp-opciones">
+              <label class="cp-opcion">
+                <input type="radio" name="fumigo" value="No" checked><span>No</span>
+              </label>
+              <label class="cp-opcion">
+                <input type="radio" name="fumigo" value="Si"><span>Si</span>
+              </label>
+              <label class="cp-opcion">
+                <input type="radio" name="fumigo" value="No_se_sabe"><span>No se sabe</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="cp-campo" id="cp-campo-dias" for="cp-dias" hidden>
+            <span>Dias desde la fumigacion</span>
+            <input id="cp-dias" name="dias" type="number" min="0" max="120"
+                   inputmode="numeric" placeholder="7">
+          </label>
+
+          <fieldset class="cp-campo">
+            <legend>Practicas de esta entrega</legend>
+            <div class="cp-checks">
+              <label class="cp-check">
+                <input type="checkbox" name="despulpadora"><span>Despulpadora compartida</span>
+              </label>
+              <label class="cp-check">
+                <input type="checkbox" name="sacos"><span>Sacos reutilizados</span>
+              </label>
+              <label class="cp-check">
+                <input type="checkbox" name="patio"><span>Secado en patio compartido</span>
+              </label>
+              <label class="cp-check">
+                <input type="checkbox" name="transporte"><span>Transporte compartido</span>
+              </label>
+              <label class="cp-check">
+                <input type="checkbox" name="lavado"><span>Equipo lavado antes de usar</span>
+              </label>
+              <label class="cp-check">
+                <input type="checkbox" name="capacitacion"><span>Productor con capacitacion BPA</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="cp-campo">
+            <span class="cp-etiqueta">Coordenadas</span>
+            <div class="cp-gps">
+              <output id="cp-gps">sin capturar</output>
+              <button type="button" id="cp-btn-gps" class="cp-btn cp-btn--ghost">
+                Capturar GPS
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="cp-acciones">
+        <button type="submit" id="cp-guardar" class="cp-btn cp-btn--primario">
+          Guardar registro
+        </button>
+        <p id="cp-estado" class="cp-estado" role="status" aria-live="polite"></p>
+      </div>
+
+    </form>
+
+    <section class="cp-bloque cp-historial">
+      <h2>Ultimos registros de esta sesion</h2>
+      <ul id="cp-historial"></ul>
+    </section>
+
+  </main>
+
+  <footer class="cp-footer">
+    <p>
+      CafeTrace MVP local. El servidor de ingesta escribe directamente en los
+      CSV de data. Sin conexion al servidor el registro queda en cola en este
+      dispositivo y se reintenta al reconectar.
+    </p>
+    <p><a href="../index.html">Ir al tablero de monitoreo</a></p>
+  </footer>
+
+  <script src="captura.js"></script>
+</body>
+</html>

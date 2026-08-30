@@ -1,0 +1,50 @@
+{
+  "semilla": 20260829,
+  "lotes_totales": 4200,
+  "tasa_contaminacion": 0.25952380952380955,
+  "particion": {
+    "entrenamiento": 2538,
+    "calibracion": 1026,
+    "prueba": 636
+  },
+  "variables_finales": [
+    "indice_exposicion",
+    "cos_viento_lindero",
+    "equipo_compartido_sin_lavar",
+    "practicas_riesgo_conteo",
+    "lavado_equipo_flag",
+    "capacitacion_bpa_flag",
+    "herramientas_compartidas_flag",
+    "sacos_reutilizados",
+    "altitud_m",
+    "direccion_media_deg",
+    "distancia_vecino_convencional_m",
+    "pendiente_pct",
+    "secado_patio_compartido"
+  ],
+  "umbral_operativo": 0.17499999999999996,
+  "metricas_prueba": {
+    "f1": 0.5681293302540416,
+    "recall": 0.7987012987012987,
+    "precision": 0.44086021505376344,
+    "auc": 0.8270261895780567,
+    "average_precision": 0.6258628121511524,
+    "brier_calibrado": 0.1307693509096595,
+    "ks": 0.4952847981893625,
+    "lift_primer_decil": 3.226461038961039,
+    "captura_tres_deciles": 0.6753246753246753,
+    "falsos_negativos": 31,
+    "falsos_positivos": 156
+  },
+  "optimizacion": {
+    "alfa": 0.05,
+    "lambda": 260.0,
+    "lotes_exportados": 270,
+    "lotes_totales_inferencia": 636,
+    "quintales_exportados": 37340.0,
+    "riesgo_realizado": 0.049999713297509386,
+    "contaminados_exportados": 15,
+    "valor_plan_usd": 16384264.0,
+    "fincas_en_cuarentena": 19
+  }
+}

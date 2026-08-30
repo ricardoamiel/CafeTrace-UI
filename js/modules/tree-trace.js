@@ -25,11 +25,54 @@
   var MARGEN = { top: 28, right: 190, bottom: 28, left: 130 };
   var NODO = { w: 168, h: 52 };
 
+  /** Nodo de la etapa 2: resumen del panel ELISA del lote. */
+  function construirNodoPanel(r) {
+    if (!r.Kits_Ejecutados) {
+      return {
+        etapa: '2 · Panel ELISA',
+        titulo: 'SIN PANEL',
+        detalle: '0/' + r.Kits_Totales + ' kits · eslabon faltante',
+        tipo: 'faltante'
+      };
+    }
+
+    var cobertura = r.Kits_Ejecutados + '/' + r.Kits_Totales + ' kits';
+
+    if (r.Hallazgos.length) {
+      var h = r.Hallazgo_Principal;
+      return {
+        etapa: '2 · Panel ELISA',
+        titulo: h.Agroquimico.toUpperCase(),
+        detalle:
+          (h.Tipo_Lectura === 'Cualitativo'
+            ? 'detectado (cualitativo)'
+            : h.Valor_ppm.toFixed(2) + ' ppm > ' + h.Umbral_ppm) +
+          ' · ' + cobertura,
+        tipo: 'critico'
+      };
+    }
+
+    if (r.Kits_Faltantes.length) {
+      return {
+        etapa: '2 · Panel ELISA',
+        titulo: 'PANEL ABIERTO',
+        detalle: 'faltan ' + r.Kits_Faltantes.join(', '),
+        tipo: 'pendiente'
+      };
+    }
+
+    return {
+      etapa: '2 · Panel ELISA',
+      titulo: 'PANEL CERRADO',
+      detalle: cobertura + ' conformes · ' + (r.Operador || 'acopio'),
+      tipo: 'ok'
+    };
+  }
+
   /* ---------------------------------------------------------------------
      Construccion de la jerarquia a partir de un registro unido.
      --------------------------------------------------------------------- */
   function construirJerarquia(r) {
-    var umbral = CT.DataLoader.CONFIG.UMBRAL_GLIFOSATO_PPM;
     var penalizacion = CT.DataLoader.CONFIG.PENALIZACION_USD_POR_QUINTAL;
 
     // --- Etapa 3/4: destino(s)
@@ -60,12 +103,12 @@
           tipo: 'neutro'
         }
       ];
-    } else if (!r.ID_Test) {
+    } else if (r.Kits_Faltantes.length) {
       hojas = [
         {
           etapa: 'Destino',
           titulo: r.Destino,
-          detalle: 'BLOQUEADO hasta completar el test ELISA',
+          detalle: 'BLOQUEADO hasta cerrar el panel ELISA',
           tipo: 'pendiente'
         }
       ];
@@ -80,21 +123,11 @@
       ];
     }
 
-    // --- Etapa 2: verificacion
-    var nodoTest = r.ID_Test
-      ? {
-          etapa: '2 · Verificacion ELISA',
-          titulo: r.ID_Test,
-          detalle:
-            r.Glifosato_ppm.toFixed(2) + ' ppm (umbral ' + umbral + ') · ' + r.Operador,
-          tipo: r.Glifosato_ppm > umbral ? 'critico' : 'ok'
-        }
-      : {
-          etapa: '2 · Verificacion ELISA',
-          titulo: 'SIN TEST',
-          detalle: 'Eslabon faltante en la cadena de custodia',
-          tipo: 'faltante'
-        };
+    // --- Etapa 2: verificacion contra el panel de kits.
+    // El nodo resume el panel y cuelga un nodo hijo por kit corrido: la
+    // cadena de custodia ya no es "hay test o no hay", es cuantos de los
+    // agroquimicos del protocolo quedaron efectivamente cubiertos.
+    var nodoTest = construirNodoPanel(r);
 
     nodoTest.children = [
       {

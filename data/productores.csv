@@ -1,7 +1,7 @@
-ID_Productor,Nombre,Finca,Coordenadas_Lat,Coordenadas_Lon,Certificacion_Declarada,Proximidad_Finca_Convencional
-P001,Mateo Quispe,Finca La Aurora,-6.2305,-77.8622,Organico,Alta
-P002,Lucia Huaman,Finca El Shambo,-6.2215,-77.8540,Organico,Baja
-P003,Juan Mendoza,Finca Las Palmeras,-6.2410,-77.8711,Convencional,N/A
-P004,Elena Flores,Finca Vista Hermosa,-6.2350,-77.8590,Organico,Alta
-P005,Carlos Ortiz,Finca Bella Vista,-6.2180,-77.8480,Organico,Baja
-P006,Rosa Tapia,Finca Los Cedros,-6.2270,-77.8660,Organico,Alta
+ID_Productor,Nombre,Finca,Coordenadas_Lat,Coordenadas_Lon,Certificacion_Declarada,Proximidad_Finca_Convencional,Empresa_Exportadora
+P001,Mateo Quispe,Finca La Aurora,-6.2305,-77.8622,Organico,Alta,Perhusa
+P002,Lucia Huaman,Finca El Shambo,-6.2215,-77.8540,Organico,Baja,Coop. Norandino
+P003,Juan Mendoza,Finca Las Palmeras,-6.2410,-77.8711,Convencional,N/A,Cenfrocafe
+P004,Elena Flores,Finca Vista Hermosa,-6.2350,-77.8590,Organico,Alta,Perhusa
+P005,Carlos Ortiz,Finca Bella Vista,-6.2180,-77.8480,Organico,Baja,Olam Peru
+P006,Rosa Tapia,Finca Los Cedros,-6.2270,-77.8660,Organico,Alta,Coop. Norandino

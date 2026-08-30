@@ -4,4 +4,5 @@ L202,P002,200,Belgica,En_Transito,Aprobado,Bajo
 L203,P003,300,Nacional,Vendido_Local,No_Aplica,Alto
 L204,P004,80,Pendiente,Segregado_Conventional,Rechazado,Critico
 L205,P005,120,Francia,En_Acopio,Aprobado,Bajo
-L206,P006,95,Paises_Bajos,En_Acopio,Pendiente_Verificacion,Bajo
+L206,P006,95,Paises_Bajos,En_Acopio,Pendiente_Verificacion,Alto
+L207,P002,110,Estados_Unidos,En_Acopio,Pendiente_Verificacion,Alto

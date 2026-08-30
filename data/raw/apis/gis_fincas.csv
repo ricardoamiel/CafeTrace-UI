@@ -1,0 +1,121 @@
+finca_id,es_convencional,certificacion,empresa_exportadora,lat,lon,altitud_m,pendiente_pct,area_ha,distancia_vecino_convencional_m,azimut_vecino_deg,tiene_barrera_viva,anios_certificacion,vecino_usa_glifosato,vecino_usa_clorpirifos,vecino_usa_cipermetrina,vecino_usa_carbendazim
+F0001,False,Organico,Olam Peru,-6.236902,-77.780408,1464.4,24.33,1.38,752.0,120.7,True,11,True,False,False,True
+F0002,False,Organico,Cenfrocafe,-6.218973,-77.931911,1286.2,14.81,1.39,237.1,97.6,False,7,False,True,True,False
+F0003,False,Organico,Coop. Norandino,-6.214804,-77.820307,1555.2,7.78,1.5,119.5,60.8,True,8,False,False,False,True
+F0004,False,Organico,Perhusa,-6.260923,-77.963818,1569.6,15.66,1.65,366.5,156.7,False,6,True,True,True,False
+F0005,False,Organico,Olam Peru,-6.204859,-77.897473,1777.1,19.16,0.95,209.3,200.4,False,8,False,True,False,True
+F0006,False,Organico,Olam Peru,-6.231793,-77.791051,1591.0,26.82,1.71,374.0,116.5,False,0,True,False,False,False
+F0007,False,Organico,Perhusa,-6.196974,-77.904534,1995.6,17.56,1.97,134.8,56.1,False,1,True,False,True,False
+F0008,False,Organico,Perhusa,-6.280189,-77.904138,1861.5,35.85,1.67,169.2,307.9,True,12,True,False,True,False
+F0009,False,Organico,Coop. Norandino,-6.273624,-77.825537,1744.6,12.97,2.7,166.8,72.5,False,14,True,False,True,False
+F0010,False,Organico,Cenfrocafe,-6.259311,-77.876018,1276.6,23.23,1.4,213.8,67.5,True,9,True,True,False,True
+F0011,True,Convencional,Perhusa,-6.19193,-77.814649,1831.4,26.4,1.76,0.0,127.3,False,0,False,False,False,False
+F0012,False,Organico,Perhusa,-6.228916,-77.898478,1576.9,55.3,0.76,137.0,323.9,True,4,True,False,False,False
+F0013,False,Organico,Olam Peru,-6.149544,-77.808623,1265.2,11.01,2.15,455.5,61.1,False,1,True,True,False,True
+F0014,False,Organico,Cenfrocafe,-6.252517,-77.799025,1587.4,6.98,2.99,306.3,3.7,False,0,True,False,True,False
+F0015,True,Convencional,Perhusa,-6.251913,-77.839401,1696.0,8.38,0.91,0.0,38.4,False,0,True,True,False,False
+F0016,False,Organico,Cenfrocafe,-6.243819,-77.875241,1240.5,32.81,2.81,292.8,203.3,False,9,True,False,False,False
+F0017,False,Organico,Perhusa,-6.271691,-77.856356,1788.5,17.35,1.33,19.7,337.7,True,5,True,True,False,False
+F0018,False,Organico,Coop. Norandino,-6.223521,-77.902249,1849.3,23.66,1.03,259.2,62.4,False,3,True,True,False,True
+F0019,False,Organico,Cenfrocafe,-6.227856,-77.860276,1511.9,17.18,1.39,220.9,83.7,False,0,True,False,True,False
+F0020,False,Organico,Perhusa,-6.203015,-77.891499,1469.5,32.97,1.53,452.1,221.2,False,8,False,True,False,False
+F0021,False,Organico,Coop. Norandino,-6.289409,-77.862982,1480.2,5.24,2.37,225.3,49.9,False,11,True,True,True,False
+F0022,False,Organico,Olam Peru,-6.253643,-77.857958,1579.2,18.33,4.12,452.9,281.1,False,11,True,True,False,True
+F0023,False,Organico,Perhusa,-6.16102,-77.836957,1552.0,19.74,1.18,1017.0,151.9,False,12,False,True,False,False
+F0024,False,Organico,Cenfrocafe,-6.335479,-77.802737,1560.2,47.82,1.87,125.8,266.4,False,4,False,False,False,True
+F0025,False,Organico,Perhusa,-6.23198,-77.956049,1518.3,21.26,1.88,45.0,92.8,True,4,False,False,True,True
+F0026,False,Organico,Perhusa,-6.234647,-77.77177,1177.6,20.73,1.91,525.4,241.4,False,4,True,False,False,False
+F0027,False,Organico,Cenfrocafe,-6.278109,-77.792917,1112.3,5.48,1.18,121.1,76.1,True,4,True,True,False,False
+F0028,False,Organico,Coop. Norandino,-6.23311,-77.852895,2123.3,7.99,3.06,98.8,136.7,False,10,False,False,False,False
+F0029,False,Organico,Olam Peru,-6.194239,-77.84402,2035.7,13.42,3.04,180.8,129.2,False,0,True,True,False,False
+F0030,False,Organico,Cenfrocafe,-6.208701,-77.903554,1617.0,31.41,2.24,119.5,61.6,False,0,True,False,True,False
+F0031,False,Organico,Perhusa,-6.245783,-77.930433,1558.4,18.61,0.73,431.5,306.8,False,0,True,True,True,False
+F0032,True,Convencional,Olam Peru,-6.261096,-77.924119,2036.8,19.08,2.16,0.0,18.2,False,0,False,False,False,True
+F0033,False,Organico,Olam Peru,-6.206627,-77.89367,1657.3,34.99,4.08,191.7,65.9,False,9,True,False,False,True
+F0034,False,Organico,Cenfrocafe,-6.210887,-77.884352,1457.0,5.64,3.39,217.3,317.1,False,6,True,False,False,False
+F0035,True,Convencional,Olam Peru,-6.258054,-77.822609,1693.7,8.6,0.71,0.0,260.1,False,0,False,False,False,False
+F0036,True,Convencional,Perhusa,-6.222683,-77.925461,1715.6,17.57,1.89,0.0,341.9,False,0,True,False,True,True
+F0037,False,Organico,Coop. Norandino,-6.202488,-77.860607,1335.5,19.16,0.62,76.7,256.5,True,12,True,True,False,True
+F0038,False,Organico,Cenfrocafe,-6.242459,-77.855441,1853.8,22.73,0.89,280.8,295.3,False,0,True,False,False,False
+F0039,False,Organico,Perhusa,-6.220278,-77.782594,1459.2,7.89,2.53,172.0,292.0,False,13,False,False,False,False
+F0040,False,Organico,Perhusa,-6.173754,-77.9086,1529.0,23.81,0.97,58.2,84.8,False,7,False,False,False,False
+F0041,True,Convencional,Cenfrocafe,-6.182791,-77.885367,1808.1,23.01,2.58,0.0,198.6,False,0,True,True,False,False
+F0042,False,Organico,Olam Peru,-6.207797,-77.965144,1571.8,20.47,2.06,716.0,306.0,True,12,True,True,False,False
+F0043,False,Organico,Olam Peru,-6.172343,-77.94526,1539.0,21.97,3.46,128.6,335.5,False,13,True,True,False,False
+F0044,False,Organico,Coop. Norandino,-6.316667,-77.890424,1544.7,10.12,3.39,416.6,200.1,False,6,True,False,True,False
+F0045,False,Organico,Cenfrocafe,-6.250378,-77.829407,1994.3,26.1,2.66,99.7,331.2,False,14,True,True,False,False
+F0046,False,Organico,Cenfrocafe,-6.280221,-77.881118,1719.3,24.58,0.79,310.4,250.3,False,14,False,False,False,False
+F0047,False,Organico,Cenfrocafe,-6.189188,-77.797679,1685.2,7.57,1.28,73.5,21.5,True,7,True,False,False,False
+F0048,True,Convencional,Cenfrocafe,-6.194666,-77.821844,1691.7,14.31,1.96,0.0,175.0,False,0,True,True,False,True
+F0049,False,Organico,Olam Peru,-6.195158,-77.915286,1529.2,19.63,0.72,234.0,164.6,True,12,True,True,True,False
+F0050,False,Organico,Olam Peru,-6.299602,-77.914674,1948.4,9.46,6.55,126.5,36.4,False,2,True,False,False,False
+F0051,False,Organico,Cenfrocafe,-6.226275,-77.931362,2109.5,12.23,0.66,344.9,237.5,False,0,True,True,False,True
+F0052,True,Convencional,Perhusa,-6.205389,-77.824633,1516.7,13.17,1.31,0.0,62.9,False,0,True,True,False,False
+F0053,False,Organico,Olam Peru,-6.259058,-77.903719,1458.1,31.09,2.43,499.4,295.0,False,3,True,False,True,True
+F0054,False,Organico,Olam Peru,-6.194803,-77.865255,1328.6,5.06,3.58,386.6,106.7,False,2,False,True,True,False
+F0055,False,Organico,Olam Peru,-6.242013,-77.880005,1482.1,13.12,2.56,206.0,277.9,True,3,True,False,False,True
+F0056,False,Organico,Cenfrocafe,-6.208033,-77.901973,1616.3,24.77,1.98,85.0,74.5,False,8,False,True,False,False
+F0057,True,Convencional,Perhusa,-6.31478,-77.83029,1580.9,4.75,2.6,0.0,59.3,False,0,True,False,False,False
+F0058,True,Convencional,Coop. Norandino,-6.283461,-77.752213,1337.4,34.2,1.39,0.0,306.8,False,0,False,True,True,False
+F0059,False,Organico,Perhusa,-6.24869,-77.973555,1865.9,3.55,6.88,86.7,109.3,True,7,True,False,False,False
+F0060,False,Organico,Cenfrocafe,-6.300751,-77.829667,1893.8,9.8,2.09,214.7,86.4,False,4,True,False,True,True
+F0061,False,Organico,Cenfrocafe,-6.24335,-77.862969,1826.1,12.96,3.08,182.8,334.8,True,1,False,True,False,False
+F0062,False,Organico,Cenfrocafe,-6.195756,-77.845767,2178.6,25.8,3.22,304.2,354.1,False,12,False,False,True,True
+F0063,False,Organico,Olam Peru,-6.24247,-77.958643,1588.0,15.73,0.95,604.9,196.7,False,2,True,True,True,False
+F0064,False,Organico,Cenfrocafe,-6.273338,-77.803319,1396.3,18.32,0.9,250.9,6.0,False,3,False,True,False,False
+F0065,True,Convencional,Olam Peru,-6.218568,-77.902281,1885.5,27.59,2.84,0.0,323.4,False,0,True,False,False,False
+F0066,False,Organico,Perhusa,-6.262117,-77.809675,1394.1,12.58,2.19,175.2,26.8,False,10,True,False,True,False
+F0067,False,Organico,Olam Peru,-6.267312,-77.767735,1722.2,18.66,3.7,95.3,145.7,True,10,False,True,True,False
+F0068,False,Organico,Olam Peru,-6.153649,-77.88017,1344.5,24.37,4.24,116.1,27.4,False,9,True,True,True,False
+F0069,False,Organico,Coop. Norandino,-6.317656,-77.833844,1834.4,41.16,1.57,81.2,325.4,False,0,True,False,True,True
+F0070,False,Organico,Perhusa,-6.190307,-77.846534,1730.2,20.99,1.5,517.5,253.6,True,12,True,True,False,False
+F0071,False,Organico,Cenfrocafe,-6.236705,-77.870433,1762.8,21.61,2.58,72.1,21.0,True,7,True,False,False,False
+F0072,False,Organico,Perhusa,-6.083346,-77.827567,1826.3,11.98,1.56,618.3,291.2,False,6,False,False,False,False
+F0073,False,Organico,Coop. Norandino,-6.195619,-77.91784,1873.1,12.83,5.5,196.0,44.4,False,0,True,False,True,False
+F0074,False,Organico,Cenfrocafe,-6.273227,-77.869993,1757.9,29.69,2.81,1279.4,349.1,False,6,True,False,False,False
+F0075,False,Organico,Cenfrocafe,-6.228428,-77.937396,1855.2,18.58,1.08,175.7,317.1,False,14,True,True,False,True
+F0076,False,Organico,Coop. Norandino,-6.314755,-77.908636,1512.5,38.72,1.15,55.5,30.7,False,9,True,False,False,True
+F0077,False,Organico,Perhusa,-6.226238,-77.836649,2119.3,30.83,1.9,358.7,271.1,True,6,True,False,True,False
+F0078,False,Organico,Cenfrocafe,-6.26101,-77.819452,1328.6,17.0,2.14,324.4,71.7,False,11,True,False,False,True
+F0079,True,Convencional,Coop. Norandino,-6.270662,-77.809754,1502.5,11.83,1.55,0.0,76.6,False,0,True,True,False,False
+F0080,False,Organico,Cenfrocafe,-6.268208,-77.911801,1643.5,12.77,3.11,109.9,187.5,False,4,True,False,False,True
+F0081,False,Organico,Cenfrocafe,-6.149415,-77.940385,1544.9,8.77,1.7,156.8,84.6,False,8,False,False,True,False
+F0082,False,Organico,Coop. Norandino,-6.194409,-77.869585,1780.0,13.82,1.21,85.9,321.9,False,2,True,True,True,False
+F0083,False,Organico,Cenfrocafe,-6.167778,-77.892238,1507.7,14.81,6.97,632.9,13.9,True,7,True,False,False,False
+F0084,False,Organico,Perhusa,-6.172748,-77.857752,1857.4,13.15,3.59,351.4,59.5,False,4,True,True,False,True
+F0085,False,Organico,Olam Peru,-6.275559,-77.854125,1444.7,15.93,6.44,213.9,53.6,True,3,True,False,True,False
+F0086,False,Organico,Cenfrocafe,-6.218816,-77.925416,1338.8,24.79,1.06,23.4,104.8,False,1,False,False,True,True
+F0087,False,Organico,Cenfrocafe,-6.208935,-77.798434,1799.6,20.76,0.76,344.7,204.1,False,2,True,False,False,False
+F0088,False,Organico,Olam Peru,-6.277296,-77.844197,1695.7,14.67,0.36,118.5,158.7,True,10,True,True,False,False
+F0089,False,Organico,Olam Peru,-6.213888,-77.849612,1643.7,12.95,1.06,40.2,295.1,False,7,False,False,False,False
+F0090,False,Organico,Olam Peru,-6.198792,-77.818238,1840.2,11.57,1.15,386.1,318.0,False,6,True,True,False,False
+F0091,False,Organico,Cenfrocafe,-6.220014,-77.876668,1468.5,18.82,0.7,829.2,18.8,False,5,True,False,False,False
+F0092,True,Convencional,Perhusa,-6.247917,-77.810214,1685.7,14.28,4.22,0.0,159.8,False,0,True,True,False,False
+F0093,False,Organico,Cenfrocafe,-6.244277,-77.905014,1617.4,12.58,3.22,287.2,163.1,False,6,True,True,True,False
+F0094,False,Organico,Coop. Norandino,-6.26844,-77.941196,1529.4,29.03,0.98,268.2,285.1,True,6,True,False,True,False
+F0095,False,Organico,Perhusa,-6.278251,-77.86119,1443.9,11.27,1.59,275.6,303.0,True,2,False,False,True,True
+F0096,False,Organico,Cenfrocafe,-6.147255,-77.809589,2028.4,30.33,3.37,202.8,97.1,True,7,True,True,True,True
+F0097,True,Convencional,Coop. Norandino,-6.309644,-77.892268,1696.0,7.5,2.62,0.0,140.1,False,0,True,False,False,False
+F0098,False,Organico,Cenfrocafe,-6.211644,-77.898789,1837.6,15.51,2.13,228.6,263.3,False,14,False,False,True,True
+F0099,False,Organico,Coop. Norandino,-6.175659,-77.80608,1576.3,48.12,1.8,100.7,25.4,False,9,True,True,True,False
+F0100,True,Convencional,Cenfrocafe,-6.26015,-77.845398,1719.8,12.6,2.72,0.0,278.1,False,0,False,False,False,True
+F0101,False,Organico,Coop. Norandino,-6.335544,-77.859576,1730.9,20.1,3.21,505.4,337.8,False,3,True,False,False,False
+F0102,False,Organico,Cenfrocafe,-6.276705,-77.94307,1364.2,24.57,0.9,25.4,265.1,False,6,True,True,False,False
+F0103,False,Organico,Coop. Norandino,-6.177785,-77.916974,2084.2,14.73,2.49,52.9,78.9,False,12,True,True,False,False
+F0104,False,Organico,Olam Peru,-6.209848,-77.862177,1687.4,20.52,1.7,63.5,193.3,True,3,True,True,False,False
+F0105,False,Organico,Perhusa,-6.236433,-77.879821,1751.1,11.72,5.68,234.9,148.7,False,8,False,True,False,False
+F0106,False,Organico,Cenfrocafe,-6.253456,-77.838182,1435.0,6.99,0.62,171.4,186.8,False,3,True,True,False,True
+F0107,False,Organico,Cenfrocafe,-6.227364,-77.903736,2216.1,18.0,1.0,655.5,51.4,False,9,True,True,True,False
+F0108,False,Organico,Cenfrocafe,-6.216882,-77.81985,2013.9,9.14,1.48,87.4,244.4,False,2,True,True,False,False
+F0109,False,Organico,Coop. Norandino,-6.251739,-77.891479,1866.6,10.98,2.13,72.6,293.0,True,14,False,True,True,False
+F0110,False,Organico,Coop. Norandino,-6.272403,-77.878926,2005.1,47.62,1.59,455.8,235.6,False,10,False,False,False,True
+F0111,False,Organico,Perhusa,-6.236579,-77.857572,1413.9,28.73,1.8,685.0,183.3,True,5,False,False,True,True
+F0112,False,Organico,Perhusa,-6.27653,-77.861569,1719.7,19.55,0.81,286.9,7.5,False,7,True,False,False,False
+F0113,False,Organico,Perhusa,-6.209298,-77.889035,1767.4,6.89,3.23,234.4,50.4,False,5,False,True,False,False
+F0114,False,Organico,Olam Peru,-6.301772,-77.850053,1844.5,35.85,2.14,167.7,111.9,False,14,True,False,False,False
+F0115,True,Convencional,Olam Peru,-6.224002,-77.861661,1370.0,9.27,0.72,0.0,272.8,False,0,True,True,False,False
+F0116,False,Organico,Perhusa,-6.225748,-77.848013,1751.7,16.8,0.51,171.8,252.4,False,6,False,False,True,True
+F0117,True,Convencional,Olam Peru,-6.289418,-77.815774,1586.5,12.68,1.46,0.0,77.8,False,0,True,True,False,True
+F0118,False,Organico,Olam Peru,-6.27731,-77.833127,1572.3,14.37,0.8,184.7,166.4,False,8,True,False,False,False
+F0119,False,Organico,Olam Peru,-6.220322,-77.900785,1437.4,11.98,0.73,159.4,262.1,False,1,False,False,False,True
+F0120,False,Organico,Olam Peru,-6.221027,-77.875309,1407.9,22.07,1.04,681.8,345.9,False,5,False,True,False,False

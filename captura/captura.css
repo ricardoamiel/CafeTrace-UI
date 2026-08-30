@@ -1,0 +1,336 @@
+/* ==========================================================================
+   CafeTrace · captura.css
+   --------------------------------------------------------------------------
+   Formulario de campo. Diseno movil primero: el tecnico lo usa de pie, con
+   una mano, bajo sol y con guantes. De ahi los objetivos tactiles de 48 px,
+   el contraste alto y una sola columna hasta 720 px, donde recien pasa a
+   dos columnas para escritorio.
+   ========================================================================== */
+
+:root {
+  --verde-900: #26301f;
+  --verde-700: #3d4f31;
+  --verde-600: #4f6640;
+  --oliva-500: #6b7f4e;
+  --oliva-100: #e8eede;
+
+  --gris-900: #23231f;
+  --gris-700: #43433d;
+  --gris-500: #6f6f66;
+  --gris-300: #c9c9c0;
+  --gris-100: #eceae4;
+
+  --crema: #f7f5f0;
+  --blanco: #ffffff;
+
+  --ok: #3f8f5f;
+  --warn: #e0a80b;
+  --critico: #c0392b;
+
+  --radio: 12px;
+  --radio-sm: 8px;
+  --sombra: 0 1px 2px rgba(35, 35, 31, .06), 0 6px 18px rgba(35, 35, 31, .07);
+
+  --fuente: "Inter", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", Consolas, monospace;
+
+  /* Objetivo tactil comodo para un dedo con guante. */
+  --tactil: 48px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fuente);
+  background: var(--crema);
+  color: var(--gris-900);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 { margin: 0; font-weight: 600; }
+
+/* ---------------------------- Cabecera ---------------------------------- */
+.cp-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px calc(14px + env(safe-area-inset-top));
+  background: var(--verde-900);
+  color: #f4f2ea;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.cp-logo {
+  font-size: 26px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--oliva-500);
+  flex: none;
+}
+
+.cp-header h1 { font-size: 18px; letter-spacing: -.01em; }
+
+.cp-conexion { margin: 2px 0 0; font-size: 11.5px; opacity: .85; font-family: var(--mono); }
+.cp-conexion.is-ok   { color: #b9dcc4; }
+.cp-conexion.is-off  { color: #f0c0b8; }
+
+/* ---------------------------- Layout ------------------------------------ */
+.cp-main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 14px 14px 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.cp-bloque {
+  background: var(--blanco);
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 14px 15px 16px;
+}
+
+.cp-bloque h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14.5px;
+  margin-bottom: 12px;
+  color: var(--verde-700);
+}
+
+.cp-paso {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--oliva-100);
+  color: var(--verde-700);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cp-nota { margin: 0 0 10px; font-size: 12px; color: var(--gris-500); }
+
+/* ---------------------------- Campos ------------------------------------ */
+.cp-campo {
+  display: block;
+  margin: 0 0 14px;
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.cp-campo:last-child { margin-bottom: 0; }
+.cp-campo[hidden] { display: none; }
+
+.cp-campo > span,
+.cp-campo > legend,
+.cp-etiqueta {
+  display: block;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--gris-500);
+}
+
+.cp-campo input[type="text"],
+.cp-campo input[type="number"],
+.cp-campo select {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px; /* 16px evita el zoom automatico de iOS al enfocar */
+  padding: 11px 12px;
+  min-height: var(--tactil);
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  background: var(--blanco);
+  color: var(--gris-900);
+}
+
+.cp-campo input:focus,
+.cp-campo select:focus {
+  outline: none;
+  border-color: var(--oliva-500);
+  box-shadow: 0 0 0 3px rgba(107, 127, 78, .20);
+}
+
+.cp-campo input.is-error { border-color: var(--critico); }
+
+.cp-info {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: var(--gris-700);
+  font-family: var(--mono);
+  min-height: 1.2em;
+}
+
+/* ---------------------------- Opciones y checks -------------------------- */
+.cp-opciones { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.cp-opcion {
+  flex: 1 1 30%;
+  min-width: 96px;
+  position: relative;
+}
+
+.cp-opcion input { position: absolute; opacity: 0; pointer-events: none; }
+
+.cp-opcion span {
+  display: grid;
+  place-items: center;
+  min-height: var(--tactil);
+  padding: 8px 10px;
+  text-align: center;
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  font-size: 14px;
+  background: var(--blanco);
+  cursor: pointer;
+}
+
+.cp-opcion input:checked + span {
+  background: var(--verde-600);
+  border-color: var(--verde-600);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cp-opcion input:focus-visible + span { outline: 2px solid var(--verde-600); outline-offset: 2px; }
+
+.cp-checks { display: grid; gap: 8px; }
+
+.cp-check {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: var(--tactil);
+  padding: 6px 11px;
+  border: 1px solid var(--gris-300);
+  border-radius: var(--radio-sm);
+  font-size: 14.5px;
+  cursor: pointer;
+}
+
+.cp-check input { width: 22px; height: 22px; flex: none; accent-color: var(--verde-600); }
+.cp-check:has(input:checked) { background: var(--oliva-100); border-color: var(--oliva-500); }
+
+/* ---------------------------- GPS --------------------------------------- */
+.cp-gps { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cp-gps output { font-family: var(--mono); font-size: 12.5px; color: var(--gris-700); }
+
+/* ---------------------------- Botones ------------------------------------ */
+.cp-btn {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: var(--tactil);
+  padding: 12px 18px;
+  border-radius: var(--radio-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.cp-btn--primario { background: var(--verde-600); color: #fff; width: 100%; }
+.cp-btn--primario:hover { background: var(--verde-700); }
+.cp-btn--primario:disabled { opacity: .55; cursor: progress; }
+
+.cp-btn--ghost {
+  background: var(--blanco);
+  color: var(--gris-700);
+  border-color: var(--gris-300);
+  font-size: 13.5px;
+  padding: 9px 13px;
+  min-height: 40px;
+}
+
+.cp-toggle {
+  margin-left: auto;
+  border: 0;
+  background: none;
+  font: 600 12px var(--fuente);
+  color: var(--verde-600);
+  cursor: pointer;
+  text-decoration: underline;
+  min-height: 32px;
+}
+
+.cp-acciones { display: grid; gap: 9px; }
+
+.cp-estado { margin: 0; font-size: 13.5px; font-weight: 600; min-height: 1.3em; text-align: center; }
+.cp-estado.is-ok    { color: var(--ok); }
+.cp-estado.is-error { color: var(--critico); }
+.cp-estado.is-cola  { color: #a8790a; }
+
+/* ---------------------------- Historial ---------------------------------- */
+.cp-historial ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+
+.cp-historial li {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  flex-wrap: wrap;
+  padding: 9px 11px;
+  border-left: 3px solid var(--gris-300);
+  background: var(--gris-100);
+  border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
+  font-size: 13px;
+}
+
+.cp-historial li.is-alerta { border-left-color: var(--critico); }
+.cp-historial li.is-ok     { border-left-color: var(--ok); }
+.cp-historial li.is-cola   { border-left-color: var(--warn); }
+
+.cp-historial .cp-id { font-family: var(--mono); font-weight: 700; }
+.cp-historial .cp-detalle { color: var(--gris-700); }
+.cp-historial .cp-hora { margin-left: auto; font-size: 11px; color: var(--gris-500); font-family: var(--mono); }
+.cp-historial .cp-vacio { color: var(--gris-500); font-size: 13px; border: 0; background: none; }
+
+/* ---------------------------- Pie ---------------------------------------- */
+.cp-footer {
+  padding: 6px 18px 30px;
+  text-align: center;
+  color: var(--gris-500);
+  font-size: 11.5px;
+}
+
+.cp-footer p { margin: 0 auto 8px; max-width: 560px; }
+.cp-footer a { color: var(--verde-600); font-weight: 600; }
+
+/* ---------------------------- Escritorio --------------------------------- */
+@media (min-width: 720px) {
+  .cp-main {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  /* El formulario ocupa la columna izquierda completa; el historial queda
+     al lado, visible mientras se captura. */
+  #cp-form { grid-column: 1; display: grid; gap: 16px; }
+  .cp-historial { grid-column: 2; position: sticky; top: 86px; }
+  .cp-footer { grid-column: 1 / -1; }
+  .cp-btn--primario { width: auto; justify-self: start; padding: 12px 28px; }
+  .cp-acciones { grid-template-columns: auto 1fr; align-items: center; }
+  .cp-estado { text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
