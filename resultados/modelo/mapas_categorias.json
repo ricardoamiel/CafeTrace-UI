@@ -1,0 +1,43 @@
+{
+  "variedad": {
+    "Bourbon": 0,
+    "Catimor": 1,
+    "Caturra": 2,
+    "Geisha": 3,
+    "Typica": 4
+  },
+  "destino_previsto": {
+    "Alemania": 0,
+    "Belgica": 1,
+    "Estados_Unidos": 2,
+    "Francia": 3,
+    "Japon": 4,
+    "Nacional": 5,
+    "Paises_Bajos": 6
+  },
+  "tecnico_id": {
+    "TEC01": 0,
+    "TEC02": 1,
+    "TEC03": 2,
+    "TEC04": 3,
+    "TEC05": 4,
+    "TEC06": 5,
+    "TEC07": 6,
+    "TEC08": 7,
+    "TEC09": 8,
+    "TEC10": 9,
+    "TEC11": 10,
+    "TEC12": 11
+  },
+  "vecino_fumigo_reciente": {
+    "No": 0,
+    "No_se_sabe": 1,
+    "Si": 2
+  },
+  "empresa_exportadora": {
+    "Cenfrocafe": 0,
+    "Coop. Norandino": 1,
+    "Olam Peru": 2,
+    "Perhusa": 3
+  }
+}

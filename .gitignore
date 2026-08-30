@@ -1,2 +1,6 @@
 *.txt
 RESPUESTAS.md
+Arquitectura-idea.md
+*.pdf
+
+scripts/__pycache__/

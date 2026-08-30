@@ -1,0 +1,637 @@
+lote_id,finca_id,empresa_exportadora,peso_quintales,destino_previsto,p_contaminado,decil_riesgo,alerta_modelo,en_cuarentena,decision,motivo,valor_asignado_usd,lote_contaminado
+L001687,F0047,Cenfrocafe,124.8,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19968.0,1
+L000719,F0047,Cenfrocafe,106.5,Alemania,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17040.0,1
+L002039,F0047,Cenfrocafe,98.5,Paises_Bajos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,15760.0,1
+L002710,F0067,Olam Peru,72.0,Belgica,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,11520.0,1
+L003037,F0067,Olam Peru,232.2,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,37152.0,1
+L003359,F0045,Cenfrocafe,113.2,Paises_Bajos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,18112.0,1
+L000923,F0009,Coop. Norandino,68.7,Belgica,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,10992.0,1
+L000471,F0105,Perhusa,197.5,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,31600.0,1
+L001891,F0103,Coop. Norandino,158.8,Paises_Bajos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25408.0,1
+L002295,F0103,Coop. Norandino,184.8,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,29568.0,1
+L002308,F0009,Coop. Norandino,173.0,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27680.0,1
+L003433,F0009,Coop. Norandino,171.9,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27504.0,1
+L003729,F0009,Coop. Norandino,61.6,Japon,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,9856.0,1
+L001712,F0009,Coop. Norandino,126.5,Belgica,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,20240.0,1
+L002013,F0009,Coop. Norandino,122.4,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19584.0,1
+L003832,F0028,Coop. Norandino,45.3,Alemania,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,7248.0,0
+L002334,F0033,Olam Peru,63.4,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,10144.0,1
+L000097,F0033,Olam Peru,70.8,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,11328.0,1
+L000385,F0028,Coop. Norandino,109.7,Nacional,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17552.0,1
+L001679,F0033,Olam Peru,55.2,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,8832.0,1
+L001945,F0009,Coop. Norandino,223.8,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,35808.0,1
+L001351,F0103,Coop. Norandino,124.2,Paises_Bajos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19872.0,1
+L004108,F0047,Cenfrocafe,100.8,Francia,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,16128.0,1
+L003426,F0099,Coop. Norandino,215.0,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,34400.0,1
+L002987,F0099,Coop. Norandino,105.6,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,16896.0,1
+L000227,F0099,Coop. Norandino,160.6,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25696.0,1
+L001901,F0099,Coop. Norandino,301.2,Estados_Unidos,1.0,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,48192.0,1
+L001398,F0047,Cenfrocafe,156.0,Paises_Bajos,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24960.0,1
+L002577,F0047,Cenfrocafe,318.7,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,50992.0,1
+L002793,F0047,Cenfrocafe,99.0,Belgica,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,15840.0,1
+L001773,F0118,Olam Peru,107.8,Alemania,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17248.0,1
+L000310,F0027,Cenfrocafe,116.6,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,18656.0,0
+L001165,F0105,Perhusa,128.0,Japon,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,20480.0,1
+L001667,F0118,Olam Peru,56.3,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,9008.0,0
+L000264,F0118,Olam Peru,159.6,Paises_Bajos,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25536.0,1
+L000956,F0105,Perhusa,167.2,Japon,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,26752.0,0
+L003882,F0009,Coop. Norandino,137.5,Alemania,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,22000.0,1
+L004032,F0038,Cenfrocafe,169.5,Estados_Unidos,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27120.0,1
+L001717,F0033,Olam Peru,160.1,Francia,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25616.0,1
+L001094,F0047,Cenfrocafe,144.1,Estados_Unidos,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,23056.0,1
+L001008,F0105,Perhusa,135.9,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,21744.0,1
+L000276,F0038,Cenfrocafe,88.8,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,14208.0,0
+L002815,F0038,Cenfrocafe,306.6,Nacional,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,49056.0,0
+L001423,F0028,Coop. Norandino,262.7,Belgica,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,42032.0,0
+L003189,F0038,Cenfrocafe,220.2,Belgica,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,35232.0,1
+L002811,F0038,Cenfrocafe,212.0,Alemania,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,33920.0,1
+L001547,F0090,Olam Peru,94.3,Paises_Bajos,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,15088.0,1
+L000610,F0027,Cenfrocafe,152.3,Japon,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24368.0,0
+L001570,F0038,Cenfrocafe,171.8,Alemania,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27488.0,1
+L004146,F0027,Cenfrocafe,80.7,Alemania,0.9032258064516129,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,12912.0,1
+L004143,F0105,Perhusa,164.5,Paises_Bajos,0.8723242811870359,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,26320.0,0
+L001412,F0027,Cenfrocafe,114.8,Francia,0.7998068477185322,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,18368.0,1
+L003343,F0047,Cenfrocafe,70.0,Paises_Bajos,0.75,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,11200.0,1
+L002929,F0118,Olam Peru,111.4,Estados_Unidos,0.75,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17824.0,1
+L002238,F0049,Olam Peru,171.9,Japon,0.6486486486486487,1,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27504.0,0
+L000394,F0002,Cenfrocafe,126.3,Alemania,0.6486486486486487,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,20208.0,1
+L003473,F0002,Cenfrocafe,161.2,Nacional,0.6486486486486487,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,25792.0,1
+L003233,F0099,Coop. Norandino,246.1,Alemania,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,39376.0,1
+L003260,F0090,Olam Peru,234.7,Estados_Unidos,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,37552.0,1
+L001621,F0033,Olam Peru,100.0,Belgica,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,16000.0,1
+L000848,F0105,Perhusa,119.3,Alemania,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19088.0,0
+L003372,F0105,Perhusa,111.0,Estados_Unidos,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17760.0,0
+L003102,F0029,Olam Peru,118.9,Paises_Bajos,0.6486486486486487,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19024.0,0
+L004150,F0089,Olam Peru,176.5,Alemania,0.6486486486486487,1,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,28240.0,0
+L001022,F0098,Cenfrocafe,157.8,Francia,0.6486486486486487,1,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25248.0,1
+L001944,F0022,Olam Peru,174.8,Nacional,0.6486486486486487,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27968.0,0
+L002448,F0087,Cenfrocafe,249.5,Nacional,0.6486486486486487,1,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,39920.0,1
+L000563,F0044,Coop. Norandino,162.7,Belgica,0.6486486486486487,1,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,26032.0,0
+L002250,F0064,Cenfrocafe,128.7,Belgica,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,20592.0,1
+L003850,F0067,Olam Peru,113.0,Estados_Unidos,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,18080.0,0
+L003312,F0049,Olam Peru,121.0,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19360.0,1
+L000496,F0112,Perhusa,171.9,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27504.0,0
+L000202,F0006,Olam Peru,98.5,Alemania,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,15760.0,1
+L001723,F0120,Olam Peru,54.5,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,8720.0,0
+L001940,F0004,Perhusa,327.9,Belgica,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,52464.0,1
+L003645,F0110,Coop. Norandino,66.4,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,10624.0,1
+L004035,F0110,Coop. Norandino,165.3,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,26448.0,1
+L000570,F0063,Olam Peru,80.0,Nacional,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,12800.0,0
+L002948,F0049,Olam Peru,44.6,Belgica,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,7136.0,1
+L002829,F0051,Cenfrocafe,104.8,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,16768.0,1
+L001309,F0008,Perhusa,137.7,Nacional,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22032.0,0
+L001498,F0007,Perhusa,50.9,Francia,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,8144.0,0
+L001781,F0049,Olam Peru,44.0,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,7040.0,0
+L001265,F0046,Cenfrocafe,130.9,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,20944.0,1
+L001128,F0044,Coop. Norandino,170.5,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27280.0,1
+L003621,F0022,Olam Peru,65.4,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,10464.0,0
+L001562,F0040,Perhusa,84.6,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,13536.0,1
+L001001,F0090,Olam Peru,267.7,Estados_Unidos,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,42832.0,1
+L001465,F0086,Cenfrocafe,141.4,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22624.0,0
+L002403,F0008,Perhusa,121.0,Belgica,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19360.0,1
+L003236,F0014,Cenfrocafe,147.5,Alemania,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,23600.0,1
+L001442,F0096,Cenfrocafe,176.2,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,28192.0,1
+L000204,F0103,Coop. Norandino,172.0,Belgica,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27520.0,1
+L004145,F0066,Perhusa,110.9,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,17744.0,0
+L003319,F0012,Perhusa,168.4,Francia,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,26944.0,0
+L004127,F0110,Coop. Norandino,102.8,Japon,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,16448.0,0
+L000649,F0109,Coop. Norandino,296.9,Nacional,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,47504.0,1
+L002826,F0108,Cenfrocafe,171.8,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27488.0,0
+L001912,F0061,Cenfrocafe,140.9,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22544.0,0
+L000983,F0113,Perhusa,162.2,Japon,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,25952.0,0
+L002033,F0054,Olam Peru,342.5,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,54800.0,0
+L001097,F0111,Perhusa,75.3,Estados_Unidos,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,12048.0,0
+L003083,F0053,Olam Peru,297.1,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,47536.0,1
+L000131,F0081,Cenfrocafe,83.9,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,13424.0,1
+L002147,F0030,Cenfrocafe,147.6,Japon,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,23616.0,0
+L000453,F0030,Cenfrocafe,125.5,Nacional,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,20080.0,1
+L000727,F0081,Cenfrocafe,210.0,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,33600.0,1
+L003452,F0043,Olam Peru,54.8,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,8768.0,1
+L001596,F0020,Perhusa,59.4,Nacional,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,9504.0,1
+L002478,F0070,Perhusa,69.9,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,11184.0,1
+L001934,F0081,Cenfrocafe,83.6,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,13376.0,0
+L000587,F0095,Perhusa,92.1,Nacional,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,14736.0,0
+L000045,F0093,Cenfrocafe,97.0,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,15520.0,1
+L003091,F0093,Cenfrocafe,266.8,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,42688.0,1
+L000044,F0093,Cenfrocafe,267.1,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,42736.0,0
+L002654,F0019,Cenfrocafe,233.7,Alemania,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,37392.0,0
+L003184,F0073,Coop. Norandino,81.7,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,13072.0,0
+L003919,F0088,Olam Peru,218.3,Belgica,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,34928.0,0
+L003973,F0103,Coop. Norandino,179.1,Estados_Unidos,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,28656.0,0
+L003277,F0090,Olam Peru,119.0,Nacional,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19040.0,0
+L001176,F0090,Olam Peru,108.0,Belgica,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17280.0,1
+L003913,F0093,Cenfrocafe,96.4,Estados_Unidos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,15424.0,0
+L001501,F0090,Olam Peru,85.1,Alemania,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,13616.0,1
+L002708,F0023,Perhusa,152.5,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,24400.0,1
+L002933,F0085,Olam Peru,135.2,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,21632.0,0
+L000438,F0085,Olam Peru,217.0,Belgica,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,34720.0,0
+L003820,F0025,Perhusa,126.4,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,20224.0,1
+L002644,F0113,Perhusa,216.4,Alemania,0.5714285714285714,2,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,34624.0,0
+L004101,F0076,Coop. Norandino,123.7,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19792.0,0
+L003802,F0076,Coop. Norandino,103.1,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,16496.0,1
+L003774,F0007,Perhusa,280.7,Paises_Bajos,0.5714285714285714,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,44912.0,0
+L001929,F0106,Cenfrocafe,109.4,Nacional,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,17504.0,0
+L001849,F0051,Cenfrocafe,82.0,Paises_Bajos,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,13120.0,0
+L002465,F0062,Cenfrocafe,134.3,Alemania,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,21488.0,1
+L000291,F0078,Cenfrocafe,55.4,Francia,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,8864.0,0
+L001025,F0030,Cenfrocafe,169.7,Belgica,0.5714285714285714,2,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,27152.0,1
+L001146,F0073,Coop. Norandino,190.1,Alemania,0.5645295832655255,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,30416.0,1
+L003424,F0004,Perhusa,121.6,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19456.0,1
+L003953,F0006,Olam Peru,78.5,Estados_Unidos,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,12560.0,0
+L000053,F0046,Cenfrocafe,47.6,Nacional,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,7616.0,1
+L000414,F0094,Coop. Norandino,120.4,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19264.0,0
+L002406,F0098,Cenfrocafe,150.5,Francia,0.5333333333333333,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24080.0,1
+L003087,F0086,Cenfrocafe,77.2,Japon,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,12352.0,0
+L002936,F0022,Olam Peru,148.1,Belgica,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,23696.0,1
+L000117,F0042,Olam Peru,118.1,Estados_Unidos,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,18896.0,1
+L002386,F0071,Cenfrocafe,207.9,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,33264.0,1
+L003527,F0042,Olam Peru,193.1,Paises_Bajos,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,30896.0,1
+L001376,F0095,Perhusa,160.1,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,25616.0,0
+L002397,F0017,Perhusa,90.3,Belgica,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,14448.0,0
+L002294,F0103,Coop. Norandino,56.3,Estados_Unidos,0.5333333333333333,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,9008.0,0
+L000969,F0025,Perhusa,68.9,Belgica,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,11024.0,1
+L002225,F0113,Perhusa,139.5,Japon,0.5333333333333333,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,22320.0,0
+L001152,F0077,Perhusa,160.7,Estados_Unidos,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,25712.0,0
+L003869,F0026,Perhusa,288.1,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,46096.0,1
+L001611,F0085,Olam Peru,139.1,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22256.0,1
+L002656,F0085,Olam Peru,218.5,Alemania,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,34960.0,0
+L001854,F0060,Cenfrocafe,137.8,Belgica,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22048.0,0
+L003367,F0061,Cenfrocafe,110.3,Nacional,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,17648.0,0
+L000463,F0007,Perhusa,92.1,Estados_Unidos,0.5333333333333333,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,14736.0,0
+L001796,F0083,Cenfrocafe,103.3,Alemania,0.47058823529411764,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,16528.0,0
+L003794,F0083,Cenfrocafe,117.2,Paises_Bajos,0.47058823529411764,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,18752.0,0
+L002402,F0028,Coop. Norandino,53.3,Estados_Unidos,0.47058823529411764,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,8528.0,0
+L002859,F0083,Cenfrocafe,160.4,Belgica,0.47058823529411764,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,25664.0,0
+L002668,F0033,Olam Peru,138.5,Estados_Unidos,0.47058823529411764,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,22160.0,1
+L000651,F0070,Perhusa,194.0,Paises_Bajos,0.47058823529411764,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,31040.0,0
+L002843,F0091,Cenfrocafe,143.3,Francia,0.47058823529411764,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,22928.0,1
+L002256,F0105,Perhusa,187.9,Alemania,0.23076923076923078,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,30064.0,0
+L000870,F0028,Coop. Norandino,111.0,Alemania,0.23076923076923078,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17760.0,0
+L002136,F0073,Coop. Norandino,123.6,Alemania,0.23076923076923078,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,19776.0,1
+L004067,F0061,Cenfrocafe,116.8,Paises_Bajos,0.23076923076923078,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,18688.0,0
+L002639,F0118,Olam Peru,124.0,Japon,0.23076923076923078,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19840.0,0
+L000768,F0029,Olam Peru,208.0,Belgica,0.23076923076923078,3,1,0,SEGREGAR_CONVENCIONAL,riesgo esperado supera la diferencia de precio del lote,33280.0,0
+L000260,F0007,Perhusa,150.6,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,24096.0,0
+L002555,F0007,Perhusa,171.6,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27456.0,0
+L000244,F0056,Cenfrocafe,197.4,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,31584.0,0
+L003046,F0055,Olam Peru,134.8,Estados_Unidos,0.1875,4,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,21568.0,1
+L001222,F0056,Cenfrocafe,178.7,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,28592.0,1
+L000106,F0062,Cenfrocafe,30.7,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,4912.0,0
+L003336,F0060,Cenfrocafe,122.6,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19616.0,0
+L001804,F0059,Perhusa,143.9,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,23024.0,0
+L002087,F0056,Cenfrocafe,98.2,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15712.0,0
+L001869,F0056,Cenfrocafe,118.7,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,18992.0,0
+L002538,F0108,Cenfrocafe,132.8,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,21248.0,0
+L001524,F0113,Perhusa,103.0,Belgica,0.1875,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,16480.0,1
+L004187,F0116,Perhusa,90.1,Francia,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,14416.0,0
+L002336,F0050,Olam Peru,117.8,Belgica,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,18848.0,1
+L004085,F0051,Cenfrocafe,97.5,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15600.0,0
+L001830,F0051,Cenfrocafe,198.0,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,31680.0,0
+L001549,F0053,Olam Peru,125.7,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20112.0,1
+L001581,F0112,Perhusa,263.9,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,42224.0,0
+L002353,F0114,Olam Peru,169.9,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27184.0,0
+L003168,F0076,Coop. Norandino,127.3,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20368.0,0
+L002970,F0078,Cenfrocafe,100.2,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16032.0,0
+L004114,F0030,Cenfrocafe,144.9,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,23184.0,0
+L001839,F0033,Olam Peru,185.9,Belgica,0.1875,4,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,29744.0,0
+L001316,F0031,Perhusa,134.2,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,21472.0,1
+L000805,F0081,Cenfrocafe,158.7,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25392.0,0
+L003084,F0112,Perhusa,180.5,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,28880.0,0
+L003460,F0112,Perhusa,203.1,Estados_Unidos,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,32496.0,0
+L002328,F0084,Perhusa,273.2,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,43712.0,0
+L003809,F0029,Olam Peru,104.3,Japon,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16688.0,0
+L001694,F0029,Olam Peru,83.0,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13280.0,1
+L000041,F0082,Coop. Norandino,157.4,Japon,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25184.0,0
+L002435,F0083,Cenfrocafe,106.2,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16992.0,0
+L002019,F0083,Cenfrocafe,124.3,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19888.0,0
+L002373,F0026,Perhusa,158.2,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25312.0,0
+L003088,F0026,Perhusa,95.5,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15280.0,0
+L001110,F0026,Perhusa,181.6,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,29056.0,0
+L002752,F0026,Perhusa,324.6,Belgica,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,51936.0,0
+L000558,F0106,Cenfrocafe,187.4,Belgica,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,29984.0,1
+L001982,F0108,Cenfrocafe,310.3,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,49648.0,0
+L004130,F0010,Cenfrocafe,110.2,Belgica,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17632.0,0
+L004041,F0008,Perhusa,95.9,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15344.0,0
+L002023,F0008,Perhusa,166.0,Belgica,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,26560.0,0
+L002423,F0106,Cenfrocafe,78.2,Belgica,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,12512.0,1
+L001269,F0024,Cenfrocafe,89.2,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,14272.0,1
+L004168,F0024,Cenfrocafe,65.6,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10496.0,0
+L001808,F0024,Cenfrocafe,66.5,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10640.0,0
+L000913,F0023,Perhusa,161.8,Nacional,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25888.0,1
+L002451,F0026,Perhusa,92.9,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,14864.0,0
+L003785,F0026,Perhusa,140.7,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,22512.0,0
+L001856,F0042,Olam Peru,238.2,Belgica,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,38112.0,1
+L003339,F0039,Perhusa,207.1,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,33136.0,0
+L001188,F0075,Cenfrocafe,184.5,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,29520.0,0
+L003180,F0039,Perhusa,239.0,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,38240.0,0
+L003113,F0074,Cenfrocafe,107.9,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17264.0,0
+L000760,F0074,Cenfrocafe,181.8,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,29088.0,0
+L001729,F0074,Cenfrocafe,281.5,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,45040.0,0
+L000444,F0074,Cenfrocafe,226.5,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,36240.0,0
+L004006,F0082,Coop. Norandino,111.7,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17872.0,1
+L004057,F0082,Coop. Norandino,110.2,Belgica,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17632.0,0
+L001584,F0070,Perhusa,125.3,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20048.0,0
+L000789,F0070,Perhusa,85.0,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13600.0,0
+L000595,F0094,Coop. Norandino,68.6,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10976.0,0
+L003848,F0070,Perhusa,64.7,Paises_Bajos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10352.0,0
+L002468,F0022,Olam Peru,98.3,Francia,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15728.0,1
+L000746,F0020,Perhusa,174.9,Alemania,0.1875,5,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27984.0,0
+L001666,F0019,Cenfrocafe,67.2,Belgica,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10752.0,0
+L001014,F0021,Coop. Norandino,136.0,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,21760.0,1
+L001027,F0018,Coop. Norandino,125.1,Nacional,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20016.0,0
+L003330,F0093,Cenfrocafe,164.4,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,26304.0,0
+L000372,F0088,Olam Peru,50.3,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,8048.0,0
+L003939,F0088,Olam Peru,210.6,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,33696.0,0
+L001811,F0088,Olam Peru,116.7,Belgica,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,18672.0,1
+L001751,F0088,Olam Peru,172.5,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27600.0,1
+L001073,F0071,Cenfrocafe,160.9,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25744.0,0
+L000356,F0028,Coop. Norandino,88.8,Estados_Unidos,0.1875,4,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,14208.0,0
+L003537,F0099,Coop. Norandino,45.4,Francia,0.1875,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,7264.0,0
+L002650,F0104,Olam Peru,153.5,Paises_Bajos,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,24560.0,0
+L001468,F0099,Coop. Norandino,42.5,Francia,0.1875,3,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,6800.0,0
+L002562,F0101,Coop. Norandino,55.0,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,8800.0,1
+L003917,F0010,Cenfrocafe,60.1,Paises_Bajos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,9616.0,1
+L002889,F0008,Perhusa,120.6,Francia,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19296.0,0
+L003563,F0017,Perhusa,176.5,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,28240.0,0
+L003945,F0014,Cenfrocafe,196.4,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,31424.0,1
+L001775,F0096,Cenfrocafe,83.2,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13312.0,1
+L003493,F0098,Cenfrocafe,360.8,Belgica,0.1875,4,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,57728.0,1
+L002241,F0095,Perhusa,109.2,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17472.0,0
+L004083,F0070,Perhusa,96.9,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15504.0,0
+L002962,F0070,Perhusa,204.5,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,32720.0,0
+L000933,F0070,Perhusa,176.6,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,28256.0,0
+L001207,F0012,Perhusa,94.1,Nacional,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15056.0,0
+L002096,F0098,Cenfrocafe,225.7,Francia,0.1875,4,1,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,36112.0,0
+L000912,F0070,Perhusa,120.0,Estados_Unidos,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19200.0,0
+L001439,F0070,Perhusa,88.4,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,14144.0,0
+L000137,F0070,Perhusa,123.5,Alemania,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19760.0,0
+L003220,F0068,Olam Peru,171.6,Francia,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27456.0,0
+L002943,F0061,Cenfrocafe,169.5,Japon,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27120.0,0
+L001218,F0044,Coop. Norandino,84.3,Nacional,0.1875,4,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13488.0,0
+L003387,F0109,Coop. Norandino,130.3,Estados_Unidos,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20848.0,0
+L000283,F0001,Olam Peru,161.6,Estados_Unidos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,25856.0,0
+L001462,F0004,Perhusa,99.5,Alemania,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15920.0,1
+L002439,F0119,Olam Peru,153.7,Belgica,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,24592.0,0
+L002575,F0003,Coop. Norandino,174.3,Francia,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27888.0,0
+L004008,F0120,Olam Peru,132.3,Alemania,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,21168.0,1
+L001461,F0120,Olam Peru,231.4,Paises_Bajos,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,37024.0,0
+L002690,F0037,Coop. Norandino,48.0,Japon,0.1875,3,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,7680.0,0
+L002028,F0002,Cenfrocafe,119.3,Paises_Bajos,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,19088.0,0
+L000709,F0003,Coop. Norandino,108.7,Nacional,0.1875,5,1,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17392.0,0
+L000232,F0078,Cenfrocafe,230.3,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,36848.0,0
+L000314,F0019,Cenfrocafe,167.1,Estados_Unidos,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,26736.0,0
+L002579,F0016,Cenfrocafe,125.4,Alemania,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20064.0,0
+L000122,F0069,Coop. Norandino,250.2,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,40032.0,0
+L000774,F0072,Perhusa,109.0,Paises_Bajos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,17440.0,0
+L002259,F0072,Perhusa,99.6,Paises_Bajos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15936.0,0
+L002206,F0072,Perhusa,86.7,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13872.0,0
+L000059,F0072,Perhusa,289.2,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,46272.0,0
+L003692,F0076,Coop. Norandino,81.9,Belgica,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13104.0,1
+L003316,F0076,Coop. Norandino,82.2,Alemania,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13152.0,0
+L002086,F0013,Olam Peru,263.3,Paises_Bajos,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,42128.0,0
+L001999,F0010,Cenfrocafe,229.6,Alemania,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,36736.0,0
+L003516,F0061,Cenfrocafe,65.3,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,10448.0,0
+L000214,F0063,Olam Peru,100.5,Alemania,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16080.0,0
+L002161,F0046,Cenfrocafe,105.2,Alemania,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16832.0,1
+L003128,F0111,Perhusa,202.5,Belgica,0.17307692307692307,5,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,32400.0,0
+L002785,F0066,Perhusa,79.3,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,12688.0,1
+L000792,F0066,Perhusa,282.0,Belgica,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,45120.0,0
+L003532,F0050,Olam Peru,71.6,Nacional,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15035.999999999998,0
+L001384,F0005,Olam Peru,117.9,Estados_Unidos,0.17307692307692307,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,18864.0,0
+L003014,F0002,Cenfrocafe,52.1,Nacional,0.17307692307692307,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,10941.0,1
+L003546,F0002,Cenfrocafe,129.3,Nacional,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20688.0,0
+L002063,F0055,Olam Peru,105.7,Francia,0.17307692307692307,5,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,16912.0,1
+L000162,F0061,Cenfrocafe,213.3,Belgica,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,34128.0,0
+L002140,F0089,Olam Peru,73.2,Francia,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15372.0,0
+L000010,F0089,Olam Peru,136.6,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,21856.0,0
+L000437,F0088,Olam Peru,155.2,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,24832.0,1
+L001163,F0083,Cenfrocafe,306.8,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,49088.0,1
+L002220,F0091,Cenfrocafe,223.3,Japon,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,35728.0,1
+L000626,F0091,Cenfrocafe,97.9,Alemania,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,15664.0,0
+L003962,F0094,Coop. Norandino,78.6,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,12576.0,0
+L000112,F0080,Cenfrocafe,48.5,Estados_Unidos,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,10185.0,0
+L000296,F0078,Cenfrocafe,76.6,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,12256.0,0
+L002324,F0096,Cenfrocafe,113.3,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,18128.0,0
+L001310,F0020,Perhusa,269.8,Belgica,0.17307692307692307,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,43168.0,0
+L001733,F0019,Cenfrocafe,87.6,Estados_Unidos,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,14016.0,1
+L001844,F0003,Coop. Norandino,304.4,Alemania,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,48704.0,0
+L001987,F0083,Cenfrocafe,82.6,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,13216.0,0
+L001482,F0083,Cenfrocafe,154.7,Paises_Bajos,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32486.999999999996,0
+L001032,F0083,Cenfrocafe,64.0,Japon,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13440.0,0
+L003936,F0025,Perhusa,235.5,Nacional,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,37680.0,0
+L001472,F0039,Perhusa,103.9,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16624.0,1
+L001972,F0020,Perhusa,203.8,Belgica,0.17307692307692307,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,32608.0,0
+L001030,F0039,Perhusa,128.5,Estados_Unidos,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,20560.0,0
+L000047,F0040,Perhusa,209.6,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,33536.0,0
+L001516,F0029,Olam Peru,101.5,Francia,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16240.0,1
+L000088,F0024,Cenfrocafe,79.1,Belgica,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,12656.0,0
+L003242,F0025,Perhusa,260.2,Paises_Bajos,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,41632.0,0
+L001023,F0001,Olam Peru,141.8,Paises_Bajos,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,22688.0,0
+L001041,F0104,Olam Peru,271.9,Francia,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,43504.0,0
+L003846,F0002,Cenfrocafe,105.5,Alemania,0.17307692307692307,6,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,16880.0,1
+L004132,F0037,Coop. Norandino,167.5,Belgica,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35175.0,0
+L004164,F0059,Perhusa,118.7,Estados_Unidos,0.17307692307692307,5,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24927.0,0
+L003768,F0059,Perhusa,139.6,Belgica,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,22336.0,0
+L002906,F0104,Olam Peru,174.6,Nacional,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,27936.0,0
+L001039,F0054,Olam Peru,187.4,Belgica,0.17307692307692307,5,0,0,SEGREGAR_CONVENCIONAL,excluida para no romper la tolerancia agregada del contenedor,29984.0,0
+L002268,F0099,Coop. Norandino,155.5,Francia,0.11775205419812362,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24880.0,1
+L000322,F0007,Perhusa,93.8,Alemania,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19698.0,0
+L000739,F0119,Olam Peru,144.0,Nacional,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30240.0,0
+L002224,F0083,Cenfrocafe,75.6,Japon,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15875.999999999998,0
+L003948,F0012,Perhusa,123.5,Belgica,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25935.0,0
+L003000,F0072,Perhusa,111.4,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,23394.0,0
+L003658,F0009,Coop. Norandino,90.9,Francia,0.10784313725490197,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,14544.0,1
+L002861,F0072,Perhusa,133.1,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,27951.0,0
+L002275,F0024,Cenfrocafe,216.0,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,45360.0,0
+L000216,F0109,Coop. Norandino,254.7,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,53487.0,0
+L001905,F0109,Coop. Norandino,33.4,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,7014.0,0
+L003214,F0008,Perhusa,158.9,Alemania,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33369.0,0
+L000166,F0025,Perhusa,49.8,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,10458.0,0
+L003375,F0002,Cenfrocafe,107.4,Estados_Unidos,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22554.0,0
+L002834,F0021,Coop. Norandino,28.2,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,5922.0,0
+L001575,F0087,Cenfrocafe,121.7,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25557.0,0
+L002235,F0073,Coop. Norandino,145.0,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30450.0,0
+L000409,F0020,Perhusa,132.3,Nacional,0.10784313725490197,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,21168.0,0
+L002767,F0061,Cenfrocafe,100.2,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21042.0,0
+L001711,F0119,Olam Peru,97.0,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20370.0,0
+L001255,F0042,Olam Peru,125.3,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26313.0,0
+L000446,F0040,Perhusa,97.8,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20538.0,0
+L000561,F0029,Olam Peru,157.0,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32970.0,1
+L003206,F0029,Olam Peru,111.7,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,23457.0,0
+L001443,F0029,Olam Peru,206.6,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,43386.0,0
+L003405,F0110,Coop. Norandino,122.2,Nacional,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25662.0,0
+L000321,F0043,Olam Peru,234.9,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,49329.0,0
+L001168,F0104,Olam Peru,97.2,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20412.0,0
+L000742,F0008,Perhusa,63.2,Paises_Bajos,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13272.0,0
+L002609,F0087,Cenfrocafe,212.5,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,44625.0,0
+L003210,F0016,Cenfrocafe,48.1,Belgica,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,10101.0,0
+L003351,F0016,Cenfrocafe,88.2,Belgica,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18522.0,0
+L003431,F0077,Perhusa,119.4,Nacional,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25074.0,0
+L001346,F0070,Perhusa,193.4,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,40614.0,0
+L000747,F0069,Coop. Norandino,104.5,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21945.0,1
+L003929,F0020,Perhusa,224.9,Francia,0.10784313725490197,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,35984.0,1
+L002700,F0025,Perhusa,199.8,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,41958.0,0
+L002020,F0001,Olam Peru,59.3,Estados_Unidos,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12453.0,1
+L002175,F0111,Perhusa,209.0,Belgica,0.10784313725490197,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,33440.0,0
+L002837,F0090,Olam Peru,99.5,Alemania,0.10784313725490197,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,15920.0,1
+L001742,F0059,Perhusa,170.5,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35805.0,0
+L002280,F0059,Perhusa,164.2,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34482.0,0
+L003625,F0112,Perhusa,114.9,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24129.0,0
+L004139,F0005,Olam Peru,88.6,Estados_Unidos,0.10784313725490197,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,14176.0,0
+L000238,F0069,Coop. Norandino,75.8,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15918.0,0
+L002865,F0005,Olam Peru,64.6,Nacional,0.10784313725490197,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,10336.0,0
+L001313,F0106,Cenfrocafe,125.1,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26271.0,0
+L000092,F0004,Perhusa,92.3,Paises_Bajos,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19383.0,0
+L003525,F0004,Perhusa,132.3,Japon,0.10784313725490197,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,27783.000000000004,0
+L001409,F0114,Olam Peru,136.3,Nacional,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28623.000000000004,0
+L004073,F0005,Olam Peru,108.9,Francia,0.10784313725490197,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17424.0,0
+L002097,F0064,Cenfrocafe,165.1,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34671.0,0
+L000517,F0098,Cenfrocafe,109.0,Alemania,0.10784313725490197,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17440.0,0
+L002323,F0022,Olam Peru,121.6,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25536.0,0
+L003427,F0116,Perhusa,263.6,Paises_Bajos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,55356.00000000001,1
+L001818,F0087,Cenfrocafe,140.8,Belgica,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29568.000000000004,0
+L000687,F0098,Cenfrocafe,91.4,Alemania,0.10784313725490197,6,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,14624.0,0
+L000015,F0108,Cenfrocafe,53.0,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,11130.0,0
+L001595,F0114,Olam Peru,121.9,Estados_Unidos,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25599.0,0
+L002615,F0116,Perhusa,57.7,Alemania,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12117.0,0
+L001853,F0084,Perhusa,196.7,Francia,0.10784313725490197,6,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,41307.0,0
+L001169,F0018,Coop. Norandino,108.1,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22701.0,0
+L002967,F0020,Perhusa,261.5,Nacional,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,41840.0,0
+L003259,F0084,Perhusa,149.9,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,31479.0,1
+L002552,F0087,Cenfrocafe,149.0,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,31290.0,0
+L000017,F0085,Olam Peru,114.7,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24087.0,0
+L003592,F0102,Cenfrocafe,39.1,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,8211.0,0
+L001454,F0103,Coop. Norandino,68.7,Alemania,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,10992.0,0
+L003501,F0007,Perhusa,138.7,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29126.999999999996,0
+L001618,F0018,Coop. Norandino,172.3,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,36183.0,0
+L001315,F0020,Perhusa,85.2,Paises_Bajos,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,13632.0,0
+L003966,F0085,Olam Peru,147.4,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30954.0,0
+L001079,F0085,Olam Peru,63.2,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13272.0,0
+L001786,F0007,Perhusa,191.0,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,40110.0,0
+L003323,F0007,Perhusa,49.3,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,10353.0,0
+L001823,F0096,Cenfrocafe,116.7,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24507.0,0
+L003299,F0021,Coop. Norandino,122.7,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25767.0,0
+L002236,F0021,Coop. Norandino,79.8,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16758.0,0
+L001360,F0095,Perhusa,156.2,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32802.0,1
+L002191,F0095,Perhusa,129.5,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,27195.0,0
+L001403,F0095,Perhusa,171.0,Belgica,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35910.0,0
+L000786,F0021,Coop. Norandino,117.2,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24612.0,0
+L001917,F0098,Cenfrocafe,318.2,Belgica,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,50912.0,0
+L003161,F0095,Perhusa,170.6,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35826.0,0
+L000332,F0093,Cenfrocafe,162.7,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34167.0,0
+L003318,F0104,Olam Peru,179.4,Nacional,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,37674.0,0
+L002215,F0094,Coop. Norandino,87.6,Belgica,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18396.0,1
+L001578,F0093,Cenfrocafe,209.9,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,44079.0,0
+L004039,F0019,Cenfrocafe,137.1,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28791.0,0
+L002271,F0102,Cenfrocafe,190.2,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39942.0,0
+L000809,F0086,Cenfrocafe,116.8,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24528.0,0
+L002879,F0007,Perhusa,123.6,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25956.0,0
+L001673,F0020,Perhusa,87.4,Estados_Unidos,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,13984.0,0
+L003432,F0085,Olam Peru,138.1,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29001.0,0
+L001278,F0086,Cenfrocafe,157.2,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33012.0,0
+L003094,F0020,Perhusa,133.1,Alemania,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,21296.0,0
+L004102,F0020,Perhusa,56.9,Nacional,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,9104.0,1
+L002233,F0102,Cenfrocafe,124.1,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26061.0,0
+L002831,F0010,Cenfrocafe,224.9,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,47229.0,0
+L003780,F0010,Cenfrocafe,80.0,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16800.0,0
+L000584,F0010,Cenfrocafe,41.8,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,8778.0,0
+L000777,F0113,Perhusa,256.2,Francia,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,40992.0,0
+L000828,F0113,Perhusa,156.1,Japon,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24976.0,0
+L001224,F0113,Perhusa,214.3,Estados_Unidos,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,34288.0,0
+L002022,F0002,Cenfrocafe,78.2,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16422.0,0
+L003434,F0114,Olam Peru,75.8,Nacional,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15918.0,0
+L000560,F0001,Olam Peru,61.0,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12810.0,0
+L001250,F0108,Cenfrocafe,210.0,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,44100.0,0
+L000411,F0111,Perhusa,154.8,Belgica,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,24768.0,0
+L002955,F0111,Perhusa,244.5,Francia,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,39120.0,0
+L001684,F0107,Cenfrocafe,182.6,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,38346.0,0
+L002296,F0112,Perhusa,143.1,Belgica,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30051.0,0
+L001537,F0086,Cenfrocafe,152.7,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32066.999999999996,0
+L003779,F0113,Perhusa,197.6,Belgica,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,31616.0,0
+L001840,F0005,Olam Peru,140.2,Alemania,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,22432.0,0
+L001417,F0005,Olam Peru,124.2,Japon,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,19872.0,0
+L003656,F0005,Olam Peru,138.0,Belgica,0.034759358288770054,10,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,22080.0,0
+L004064,F0006,Olam Peru,125.6,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26376.0,0
+L001690,F0006,Olam Peru,190.2,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39942.0,0
+L000221,F0003,Coop. Norandino,141.8,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29778.000000000004,0
+L002693,F0003,Coop. Norandino,149.9,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,31479.0,0
+L003057,F0003,Coop. Norandino,164.0,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34440.0,0
+L002351,F0003,Coop. Norandino,166.1,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34881.0,0
+L001738,F0003,Coop. Norandino,119.9,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25179.0,0
+L000428,F0004,Perhusa,96.3,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20223.0,0
+L002354,F0106,Cenfrocafe,159.5,Japon,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33495.0,0
+L000905,F0010,Cenfrocafe,143.0,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30030.0,0
+L002516,F0106,Cenfrocafe,198.4,Belgica,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,41664.0,0
+L002797,F0112,Perhusa,257.0,Belgica,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,53970.0,0
+L003520,F0018,Coop. Norandino,84.9,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,17829.0,0
+L000307,F0019,Cenfrocafe,58.1,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12201.0,0
+L003146,F0019,Cenfrocafe,188.2,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39522.0,0
+L002307,F0019,Cenfrocafe,104.9,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22029.0,0
+L002894,F0010,Cenfrocafe,227.4,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,47754.0,0
+L001520,F0016,Cenfrocafe,79.8,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16758.0,0
+L000067,F0017,Perhusa,192.6,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,40446.0,0
+L003391,F0101,Coop. Norandino,73.1,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15350.999999999998,0
+L004141,F0010,Cenfrocafe,156.3,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32823.0,0
+L000035,F0101,Coop. Norandino,239.3,Paises_Bajos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,50253.0,0
+L002412,F0013,Olam Peru,132.9,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,27909.0,0
+L000597,F0013,Olam Peru,99.1,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20811.0,0
+L000971,F0013,Olam Peru,164.8,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34608.0,0
+L001093,F0014,Cenfrocafe,189.9,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39879.0,0
+L002132,F0008,Perhusa,80.1,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16821.0,0
+L004081,F0014,Cenfrocafe,184.7,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,38787.0,0
+L001497,F0014,Cenfrocafe,194.2,Japon,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,40782.0,0
+L002524,F0014,Cenfrocafe,120.5,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25305.0,0
+L003590,F0014,Cenfrocafe,156.6,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32886.0,0
+L003362,F0012,Perhusa,413.5,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,86835.0,0
+L001754,F0012,Perhusa,296.0,Nacional,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,62160.0,0
+L003120,F0012,Perhusa,140.9,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29589.0,0
+L001380,F0012,Perhusa,45.1,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,9471.0,0
+L000638,F0008,Perhusa,96.3,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20223.0,0
+L002377,F0013,Olam Peru,203.4,Belgica,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,42714.0,0
+L002447,F0013,Olam Peru,91.7,Alemania,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19257.0,0
+L000058,F0098,Cenfrocafe,136.8,Francia,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,21888.0,0
+L003158,F0098,Cenfrocafe,125.0,Alemania,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,20000.0,0
+L001683,F0098,Cenfrocafe,272.7,Paises_Bajos,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,43632.0,0
+L002441,F0098,Cenfrocafe,242.1,Paises_Bajos,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,38736.0,0
+L003517,F0010,Cenfrocafe,100.0,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21000.0,0
+L001652,F0064,Cenfrocafe,63.8,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13398.0,0
+L002760,F0050,Olam Peru,106.7,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22407.0,0
+L000077,F0050,Olam Peru,203.0,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,42630.0,0
+L000113,F0051,Cenfrocafe,235.3,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,49413.0,0
+L000778,F0049,Olam Peru,88.4,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18564.0,0
+L002460,F0049,Olam Peru,62.5,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13125.0,0
+L003028,F0050,Olam Peru,89.6,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18816.0,0
+L002726,F0025,Perhusa,66.1,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,13880.999999999998,0
+L000257,F0116,Perhusa,38.3,Belgica,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,8042.999999999999,0
+L002553,F0116,Perhusa,122.5,Nacional,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25725.0,0
+L003338,F0054,Olam Peru,79.3,Belgica,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16653.0,0
+L000051,F0053,Olam Peru,66.9,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,14049.000000000002,0
+L000839,F0053,Olam Peru,94.2,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19782.0,0
+L000854,F0053,Olam Peru,134.3,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28203.000000000004,0
+L000072,F0051,Cenfrocafe,154.0,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32340.0,0
+L001065,F0051,Cenfrocafe,86.1,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18081.0,0
+L003653,F0116,Perhusa,83.8,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,17598.0,0
+L002517,F0062,Cenfrocafe,342.4,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,71904.0,0
+L003821,F0062,Cenfrocafe,222.2,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,46662.0,0
+L003383,F0061,Cenfrocafe,216.0,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,45360.0,0
+L000941,F0060,Cenfrocafe,190.4,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39984.0,0
+L000542,F0044,Coop. Norandino,77.5,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16275.0,0
+L001632,F0044,Coop. Norandino,134.7,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28286.999999999996,0
+L002604,F0044,Coop. Norandino,136.6,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28686.0,0
+L002340,F0044,Coop. Norandino,157.2,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33012.0,0
+L000250,F0068,Olam Peru,280.1,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,58821.00000000001,0
+L002730,F0064,Cenfrocafe,187.5,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39375.0,0
+L001801,F0049,Olam Peru,178.4,Japon,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,37464.0,0
+L001504,F0049,Olam Peru,135.7,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28496.999999999996,0
+L000207,F0044,Coop. Norandino,142.1,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29841.0,0
+L001744,F0046,Cenfrocafe,153.2,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32171.999999999996,0
+L001092,F0044,Coop. Norandino,152.6,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32046.0,0
+L000555,F0044,Coop. Norandino,67.8,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,14238.0,0
+L003910,F0044,Coop. Norandino,152.1,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,31941.0,0
+L004158,F0064,Cenfrocafe,128.4,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26964.0,1
+L002227,F0111,Perhusa,165.2,Estados_Unidos,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,26432.0,0
+L001264,F0111,Perhusa,87.3,Francia,0.034759358288770054,7,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,13968.0,0
+L001676,F0110,Coop. Norandino,72.1,Paises_Bajos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15140.999999999998,0
+L001567,F0034,Cenfrocafe,167.2,Estados_Unidos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35112.0,0
+L000083,F0001,Olam Peru,197.1,Francia,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,41391.0,0
+L003904,F0120,Olam Peru,80.4,Paises_Bajos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16884.0,0
+L003707,F0001,Olam Peru,155.2,Estados_Unidos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32591.999999999996,0
+L000874,F0051,Cenfrocafe,71.0,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,14910.0,0
+L001833,F0037,Coop. Norandino,179.5,Estados_Unidos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,37695.0,0
+L000860,F0037,Coop. Norandino,58.2,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12222.0,0
+L001236,F0037,Coop. Norandino,266.5,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,55965.0,0
+L001294,F0037,Coop. Norandino,160.4,Paises_Bajos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33684.0,0
+L001095,F0034,Cenfrocafe,102.5,Estados_Unidos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21525.0,0
+L002369,F0034,Cenfrocafe,106.8,Estados_Unidos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22428.0,0
+L003797,F0110,Coop. Norandino,98.7,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20727.0,0
+L000738,F0104,Olam Peru,173.5,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,36435.0,0
+L003688,F0120,Olam Peru,162.1,Estados_Unidos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34041.0,0
+L003401,F0051,Cenfrocafe,116.9,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24549.0,0
+L002601,F0055,Olam Peru,107.4,Japon,0.034759358288770054,9,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,17184.0,0
+L003075,F0055,Olam Peru,185.2,Francia,0.034759358288770054,9,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,29632.0,0
+L001006,F0055,Olam Peru,163.6,Alemania,0.034759358288770054,9,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,26176.0,0
+L003126,F0055,Olam Peru,148.2,Belgica,0.034759358288770054,9,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,23712.0,0
+L000757,F0054,Olam Peru,112.5,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,23625.0,0
+L002814,F0054,Olam Peru,56.4,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,11844.0,0
+L000693,F0059,Perhusa,126.6,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26586.0,1
+L002200,F0001,Olam Peru,77.9,Japon,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16359.000000000002,0
+L001989,F0056,Cenfrocafe,106.8,Belgica,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22428.0,0
+L004106,F0055,Olam Peru,169.7,Francia,0.034759358288770054,9,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,27152.0,0
+L001900,F0002,Cenfrocafe,222.6,Japon,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,46746.0,0
+L004113,F0109,Coop. Norandino,139.7,Nacional,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29336.999999999996,0
+L004003,F0109,Coop. Norandino,159.9,Francia,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33579.0,1
+L000110,F0109,Coop. Norandino,84.5,Alemania,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,17745.0,1
+L004190,F0108,Cenfrocafe,136.1,Nacional,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28581.0,0
+L003538,F0108,Cenfrocafe,279.1,Paises_Bajos,0.034759358288770054,7,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,58611.00000000001,0
+L003275,F0056,Cenfrocafe,115.8,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,24318.0,0
+L002765,F0023,Perhusa,78.1,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16401.0,0
+L000611,F0023,Perhusa,170.4,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35784.0,0
+L004192,F0023,Perhusa,289.0,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,60690.0,0
+L003500,F0082,Coop. Norandino,75.8,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,15918.0,1
+L003941,F0082,Coop. Norandino,59.0,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12390.0,0
+L002986,F0082,Coop. Norandino,128.0,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,26880.0,0
+L002567,F0081,Cenfrocafe,159.0,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33390.0,0
+L002474,F0062,Cenfrocafe,91.6,Japon,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19236.0,0
+L001543,F0024,Cenfrocafe,280.5,Japon,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,58905.0,0
+L002505,F0024,Cenfrocafe,174.2,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,36582.0,0
+L002682,F0023,Perhusa,53.7,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,11277.0,0
+L003361,F0084,Perhusa,138.2,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,29021.999999999996,0
+L002782,F0025,Perhusa,37.3,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,7832.999999999999,0
+L003145,F0040,Perhusa,219.3,Francia,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,46053.0,0
+L002260,F0039,Perhusa,172.1,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,36141.0,0
+L002040,F0039,Perhusa,147.0,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30870.0,0
+L001988,F0025,Perhusa,60.9,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,12789.0,0
+L002941,F0086,Cenfrocafe,282.5,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,59325.0,0
+L000539,F0086,Cenfrocafe,158.0,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33180.0,0
+L000978,F0089,Olam Peru,204.5,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,42945.0,0
+L001495,F0089,Olam Peru,230.4,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,48384.0,0
+L001496,F0088,Olam Peru,108.1,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22701.0,0
+L001785,F0088,Olam Peru,78.4,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16464.0,0
+L000272,F0087,Cenfrocafe,97.2,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,20412.0,0
+L003562,F0017,Perhusa,164.5,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34545.0,0
+L001072,F0078,Cenfrocafe,158.2,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33222.0,0
+L000842,F0093,Cenfrocafe,93.7,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19677.0,0
+L002493,F0093,Cenfrocafe,225.4,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,47334.0,0
+L003534,F0090,Olam Peru,177.1,Belgica,0.034759358288770054,8,0,1,SEGREGAR_CONVENCIONAL,cuarentena espacial: finca foco o colindante a un foco,28336.0,0
+L001029,F0080,Cenfrocafe,181.6,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,38136.0,0
+L000093,F0080,Cenfrocafe,91.9,Belgica,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19299.0,0
+L002000,F0080,Cenfrocafe,81.6,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,17136.0,0
+L003513,F0080,Cenfrocafe,180.9,Paises_Bajos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,37989.0,0
+L000889,F0078,Cenfrocafe,240.6,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,50526.0,0
+L001288,F0017,Perhusa,213.4,Paises_Bajos,0.034759358288770054,10,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,44814.0,0
+L001303,F0069,Coop. Norandino,112.5,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,23625.0,0
+L000766,F0069,Coop. Norandino,163.7,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34377.0,0
+L002915,F0072,Perhusa,208.1,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,43701.0,0
+L003196,F0072,Perhusa,156.8,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32928.0,0
+L003021,F0071,Cenfrocafe,180.3,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,37863.0,0
+L001091,F0071,Cenfrocafe,170.4,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35784.0,0
+L002810,F0071,Cenfrocafe,382.6,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,80346.0,0
+L000432,F0069,Coop. Norandino,91.4,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,19194.0,0
+L004135,F0039,Perhusa,203.1,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,42651.0,0
+L004125,F0073,Coop. Norandino,29.3,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,6153.0,0
+L000605,F0072,Perhusa,173.8,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,36498.0,0
+L002213,F0072,Perhusa,85.1,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,17871.0,0
+L004170,F0075,Cenfrocafe,170.5,Belgica,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,35805.0,0
+L000994,F0075,Cenfrocafe,160.0,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,33600.0,0
+L001671,F0075,Cenfrocafe,153.3,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,32193.000000000004,0
+L000303,F0075,Cenfrocafe,76.7,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16107.0,0
+L000803,F0073,Coop. Norandino,106.7,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,22407.0,1
+L003765,F0073,Coop. Norandino,100.9,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21189.0,0
+L001957,F0039,Perhusa,86.9,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,18249.0,0
+L001172,F0039,Perhusa,122.9,Belgica,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25809.0,0
+L001411,F0076,Coop. Norandino,68.4,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,14364.000000000002,0
+L000488,F0043,Olam Peru,188.5,Japon,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,39585.0,0
+L003023,F0040,Perhusa,145.1,Paises_Bajos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,30471.0,0
+L001372,F0040,Perhusa,37.0,Nacional,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,7770.0,0
+L002125,F0040,Perhusa,136.0,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,28560.0,1
+L003579,F0043,Olam Peru,206.2,Estados_Unidos,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,43302.0,0
+L000781,F0069,Coop. Norandino,102.1,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,21441.0,0
+L000134,F0078,Cenfrocafe,68.6,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,14405.999999999998,0
+L002917,F0077,Perhusa,166.3,Nacional,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,34923.0,0
+L003726,F0077,Perhusa,80.3,Francia,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16863.0,0
+L002796,F0077,Perhusa,303.2,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,63672.0,0
+L000964,F0077,Perhusa,217.4,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,45654.0,0
+L002598,F0076,Coop. Norandino,128.6,Alemania,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,27006.0,0
+L004002,F0069,Coop. Norandino,212.2,Japon,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,44562.0,0
+L001789,F0069,Coop. Norandino,79.0,Estados_Unidos,0.034759358288770054,8,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,16590.0,0
+L000005,F0043,Olam Peru,119.3,Alemania,0.034759358288770054,9,0,0,EXPORTACION_ORGANICA,cumple tolerancia de riesgo y no esta en zona de cuarentena,25053.0,0

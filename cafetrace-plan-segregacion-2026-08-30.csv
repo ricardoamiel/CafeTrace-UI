@@ -1,0 +1,8 @@
+lote_id,finca_id,finca,empresa_exportadora,peso_quintales,destino_previsto,p_contaminado,origen_probabilidad,en_cuarentena,decision,motivo,valor_asignado_usd
+L204,P004,Finca Vista Hermosa,Perhusa,80,Pendiente,1.00000,medido,1,SEGREGAR_CONVENCIONAL,Finca foco de contaminacion: riesgo confirmado sobre el umbral de cuarentena.,12800.00
+L205,P005,Finca Bella Vista,Olam Peru,120,Francia,1.00000,medido,1,SEGREGAR_CONVENCIONAL,Finca foco de contaminacion: riesgo confirmado sobre el umbral de cuarentena.,19200.00
+L207,P002,Finca El Shambo,Coop. Norandino,110,Estados_Unidos,0.23129,prior,1,SEGREGAR_CONVENCIONAL,Cuarentena espacial: colinda con una finca foco dentro de 800 m y su panel sigue abierto.,17600.00
+L203,P003,Finca Las Palmeras,Cenfrocafe,300,Nacional,,fuera_de_alcance,0,SEGREGAR_CONVENCIONAL,"Fuera del alcance organico, se comercializa por canal convencional.",48000.00
+L206,P006,Finca Los Cedros,Coop. Norandino,95,Paises_Bajos,0.14937,prior,0,EXPORTACION_ORGANICA,Cumple la tolerancia de riesgo y no esta en zona de cuarentena.,19950.00
+L201,P001,Finca La Aurora,Perhusa,150,Alemania,0.02000,panel_cerrado,0,EXPORTACION_ORGANICA,"Colinda con una finca foco, pero su panel esta cerrado y conforme: la medicion directa manda sobre la cercania.",31500.00
+L202,P002,Finca El Shambo,Coop. Norandino,200,Belgica,0.02000,panel_cerrado,0,EXPORTACION_ORGANICA,"Colinda con una finca foco, pero su panel esta cerrado y conforme: la medicion directa manda sobre la cercania.",42000.00
